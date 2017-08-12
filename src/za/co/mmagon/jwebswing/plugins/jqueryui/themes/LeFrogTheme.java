@@ -22,25 +22,23 @@ import za.co.mmagon.jwebswing.htmlbuilder.css.themes.Theme;
 /**
  * The Dark Hive theme to JQuery UI
  *
- * @since 2012/02/04
- * @version
  * @author MMagon
- *
+ * @since 2012/02/04
  */
 public class LeFrogTheme extends Theme
 {
 
-    private static final long serialVersionUID = 1L;
+	private static final long serialVersionUID = 1L;
 
-    /**
-     * The LeFrog Theme
-     */
-    public LeFrogTheme()
-    {
-        super("LeFrog", "uilefrog", "bower_components/jquery-ui/themes/images/theme_30_le_frog.png", "", "bower_components/jquery-ui/themes/images/theme_90_le_frog.png");
-        getCssReferences().add(new CSSReference("lefrogTheme", 1.121, "bower_components/jquery-ui/themes/le-frog/theme.css", "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/le-frog/theme.css"));
-        getCssReferences().add(new CSSReference("lefrogTheme2", 1.121, "bower_components/jquery-ui/themes/le-frog/jquery-ui.css", "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/le-frog/jquery-ui.css"));
+	/**
+	 * The LeFrog Theme
+	 */
+	public LeFrogTheme()
+	{
+		super("LeFrog", "uilefrog", "bower_components/jquery-ui/themes/images/theme_30_le_frog.png", "", "bower_components/jquery-ui/themes/images/theme_90_le_frog.png");
+		getCssReferences().add(new CSSReference("lefrogTheme", 1.121, "bower_components/jquery-ui/themes/le-frog/theme.css", "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/le-frog/theme.css"));
+		getCssReferences().add(new CSSReference("lefrogTheme2", 1.121, "bower_components/jquery-ui/themes/le-frog/jquery-ui.css", "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/le-frog/jquery-ui.css"));
 
-    }
+	}
 
 }

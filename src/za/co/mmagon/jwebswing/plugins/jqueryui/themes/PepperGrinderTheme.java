@@ -22,25 +22,23 @@ import za.co.mmagon.jwebswing.htmlbuilder.css.themes.Theme;
 /**
  * The Dark Hive theme to JQuery UI
  *
- * @since 2012/02/04
- * @version
  * @author MMagon
- *
+ * @since 2012/02/04
  */
 public class PepperGrinderTheme extends Theme
 {
 
-    private static final long serialVersionUID = 1L;
+	private static final long serialVersionUID = 1L;
 
-    /**
-     * The pepper grinder theme
-     */
-    public PepperGrinderTheme()
-    {
-        super("Pepper Grinder", "uipeppergrinder", "bower_components/jquery-ui/themes/images/theme_30_pepper_grinder.png", "", "bower_components/jquery-ui/themes/images/theme_90_pepper_grinder.png");
-        getCssReferences().add(new CSSReference("peppergrinderTheme", 1.121, "bower_components/jquery-ui/themes/pepper-grinder/theme.css", "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/pepper-grinder/theme.css"));
-        getCssReferences().add(new CSSReference("peppergrinderTheme2", 1.121, "bower_components/jquery-ui/themes/pepper-grinder/jquery-ui.css", "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/pepper-grinder/jquery-ui.css"));
+	/**
+	 * The pepper grinder theme
+	 */
+	public PepperGrinderTheme()
+	{
+		super("Pepper Grinder", "uipeppergrinder", "bower_components/jquery-ui/themes/images/theme_30_pepper_grinder.png", "", "bower_components/jquery-ui/themes/images/theme_90_pepper_grinder.png");
+		getCssReferences().add(new CSSReference("peppergrinderTheme", 1.121, "bower_components/jquery-ui/themes/pepper-grinder/theme.css", "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/pepper-grinder/theme.css"));
+		getCssReferences().add(new CSSReference("peppergrinderTheme2", 1.121, "bower_components/jquery-ui/themes/pepper-grinder/jquery-ui.css", "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/pepper-grinder/jquery-ui.css"));
 
-    }
+	}
 
 }

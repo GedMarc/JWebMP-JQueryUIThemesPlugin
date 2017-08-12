@@ -22,25 +22,23 @@ import za.co.mmagon.jwebswing.htmlbuilder.css.themes.Theme;
 /**
  * Implements the UI Darkness Theme
  *
- * @since 2014/07/05
- * @version 1.0
  * @author MMagon
- *
- *
+ * @version 1.0
+ * @since 2014/07/05
  */
 public class OvercastTheme extends Theme
 {
 
-    private static final long serialVersionUID = 1L;
+	private static final long serialVersionUID = 1L;
 
-    /**
-     * A global overcast theme
-     */
-    public OvercastTheme()
-    {
-        super("Overcast", "uiovercast", "bower_components/jquery-ui/themes/images/theme_30_overcast.png", "", "bower_components/jquery-ui/themes/images/theme_90_overcast.png");
-        getCssReferences().add(new CSSReference("overcastTheme", 1.121, "bower_components/jquery-ui/themes/overcast/theme.css", "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/overcast/theme.css"));
-        getCssReferences().add(new CSSReference("overcastTheme2", 1.121, "bower_components/jquery-ui/themes/overcast/jquery-ui.css", "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/overcast/jquery-ui.css"));
-    }
+	/**
+	 * A global overcast theme
+	 */
+	public OvercastTheme()
+	{
+		super("Overcast", "uiovercast", "bower_components/jquery-ui/themes/images/theme_30_overcast.png", "", "bower_components/jquery-ui/themes/images/theme_90_overcast.png");
+		getCssReferences().add(new CSSReference("overcastTheme", 1.121, "bower_components/jquery-ui/themes/overcast/theme.css", "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/overcast/theme.css"));
+		getCssReferences().add(new CSSReference("overcastTheme2", 1.121, "bower_components/jquery-ui/themes/overcast/jquery-ui.css", "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/overcast/jquery-ui.css"));
+	}
 
 }

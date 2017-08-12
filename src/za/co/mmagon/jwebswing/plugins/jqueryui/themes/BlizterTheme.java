@@ -22,26 +22,24 @@ import za.co.mmagon.jwebswing.htmlbuilder.css.themes.Theme;
 /**
  * Implements the UI Darkness Theme
  *
- * @since 2014/07/05
- * @version 1.0
  * @author MMagon
- *
- *
+ * @version 1.0
+ * @since 2014/07/05
  */
 public class BlizterTheme extends Theme
 {
 
-    private static final long serialVersionUID = 1L;
+	private static final long serialVersionUID = 1L;
 
-    /**
-     * Constructs a new instance of the blitzer theme
-     */
-    public BlizterTheme()
-    {
-        super("Blitzer", "uiblitzer", "bower_components/jquery-ui/themes/images/theme_30_blitzer.png", "", "bower_components/jquery-ui/themes/images/theme_90_blitzer.png");
-        getCssReferences().add(new CSSReference("BlitzerTheme2", 1.121, "bower_components/jquery-ui/themes/blizter/theme.css", "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/blitzer/theme.css"));
-        getCssReferences().add(new CSSReference("BlitzerTheme", 1.121, "bower_components/jquery-ui/themes/blizter/jquery-ui.css", "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/blitzer/jquery-ui.css"));
+	/**
+	 * Constructs a new instance of the blitzer theme
+	 */
+	public BlizterTheme()
+	{
+		super("Blitzer", "uiblitzer", "bower_components/jquery-ui/themes/images/theme_30_blitzer.png", "", "bower_components/jquery-ui/themes/images/theme_90_blitzer.png");
+		getCssReferences().add(new CSSReference("BlitzerTheme2", 1.121, "bower_components/jquery-ui/themes/blizter/theme.css", "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/blitzer/theme.css"));
+		getCssReferences().add(new CSSReference("BlitzerTheme", 1.121, "bower_components/jquery-ui/themes/blizter/jquery-ui.css", "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/blitzer/jquery-ui.css"));
 
-    }
+	}
 
 }

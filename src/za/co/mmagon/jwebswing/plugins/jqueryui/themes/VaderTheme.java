@@ -22,25 +22,23 @@ import za.co.mmagon.jwebswing.htmlbuilder.css.themes.Theme;
 /**
  * Implements the UI Darkness Theme
  *
- * @since 2014/07/05
- * @version 1.0
  * @author MMagon
- *
- *
+ * @version 1.0
+ * @since 2014/07/05
  */
 public class VaderTheme extends Theme
 {
 
-    private static final long serialVersionUID = 1L;
+	private static final long serialVersionUID = 1L;
 
-    /**
-     * The vader theme
-     */
-    public VaderTheme()
-    {
-        super("Vader", "uivader", "bower_components/jquery-ui/themes/images/theme_30_vader.png", "", "bower_components/jquery-ui/themes/images/theme_90_vader.png");
-        getCssReferences().add(new CSSReference("vaderTheme", 1.121, "bower_components/jquery-ui/themes/vader/theme.css", "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/vader/theme.css"));
-        getCssReferences().add(new CSSReference("vaderTheme2", 1.121, "bower_components/jquery-ui/themes/vader/jquery-ui.css", "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/vader/jquery-ui.css"));
-    }
+	/**
+	 * The vader theme
+	 */
+	public VaderTheme()
+	{
+		super("Vader", "uivader", "bower_components/jquery-ui/themes/images/theme_30_vader.png", "", "bower_components/jquery-ui/themes/images/theme_90_vader.png");
+		getCssReferences().add(new CSSReference("vaderTheme", 1.121, "bower_components/jquery-ui/themes/vader/theme.css", "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/vader/theme.css"));
+		getCssReferences().add(new CSSReference("vaderTheme2", 1.121, "bower_components/jquery-ui/themes/vader/jquery-ui.css", "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/vader/jquery-ui.css"));
+	}
 
 }

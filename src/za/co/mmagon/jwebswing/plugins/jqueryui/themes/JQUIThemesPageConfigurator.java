@@ -21,40 +21,38 @@ import za.co.mmagon.jwebswing.PageConfigurator;
 import za.co.mmagon.jwebswing.plugins.PluginInformation;
 
 /**
- *
  * @author GedMarc
  * @since 28 Feb 2017
- *
  */
 @PluginInformation(pluginName = "JQuery UI Themes",
-                   pluginUniqueName = "jquery-ui-themes",
-                   pluginDescription = "ThemeRoller allows you to design custom jQuery UI themes for tight integration in your projects. To create a custom theme, select the Roll your own tab and tweak the settings. As you work, the UI components to the right will update to reflect your design and you can download your theme whenever you like.",
-                   pluginVersion = "1.12.1",
-                   pluginDependancyUniqueIDs = "jquery-ui",
-                   pluginCategories = "jquery, ui, jquery-ui",
-                   pluginSubtitle = "JQuery UI Default Themes",
-                   pluginGitUrl = "https://github.com/GedMarc/JWebSwing-JQueryUIThemesPlugin",
-                   pluginSourceUrl = "http://jqueryui.com/",
-                   pluginWikiUrl = "https://github.com/GedMarc/JWebSwing-JQueryUIThemesPlugin/wiki",
-                   pluginOriginalHomepage = "http://jqueryui.com/themeroller/",
-                   pluginDownloadUrl = "https://sourceforge.net/projects/jwebswing/files/plugins/JQueryUIThemesPlugin.jar/download",
-                   pluginIconUrl = "bower_components/jquery-ui/themes/themeroller_icon.jpg",
-                   pluginIconImageUrl = "bower_components/jquery-ui/themes/themeroller_example.jpg",
-                   pluginLastUpdatedDate = "2017/03/04"
+		pluginUniqueName = "jquery-ui-themes",
+		pluginDescription = "ThemeRoller allows you to design custom jQuery UI themes for tight integration in your projects. To create a custom theme, select the Roll your own tab and tweak the settings. As you work, the UI components to the right will update to reflect your design and you can download your theme whenever you like.",
+		pluginVersion = "1.12.1",
+		pluginDependancyUniqueIDs = "jquery-ui",
+		pluginCategories = "jquery, ui, jquery-ui",
+		pluginSubtitle = "JQuery UI Default Themes",
+		pluginGitUrl = "https://github.com/GedMarc/JWebSwing-JQueryUIThemesPlugin",
+		pluginSourceUrl = "http://jqueryui.com/",
+		pluginWikiUrl = "https://github.com/GedMarc/JWebSwing-JQueryUIThemesPlugin/wiki",
+		pluginOriginalHomepage = "http://jqueryui.com/themeroller/",
+		pluginDownloadUrl = "https://sourceforge.net/projects/jwebswing/files/plugins/JQueryUIThemesPlugin.jar/download",
+		pluginIconUrl = "bower_components/jquery-ui/themes/themeroller_icon.jpg",
+		pluginIconImageUrl = "bower_components/jquery-ui/themes/themeroller_example.jpg",
+		pluginLastUpdatedDate = "2017/03/04"
 )
 public class JQUIThemesPageConfigurator extends PageConfigurator
 {
 
-    private static final long serialVersionUID = 1L;
+	private static final long serialVersionUID = 1L;
 
-    public JQUIThemesPageConfigurator()
-    {
+	public JQUIThemesPageConfigurator()
+	{
 
-    }
+	}
 
-    @Override
-    public Page configure(Page page)
-    {
-        return page;
-    }
+	@Override
+	public Page configure(Page page)
+	{
+		return page;
+	}
 }

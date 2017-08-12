@@ -22,25 +22,23 @@ import za.co.mmagon.jwebswing.htmlbuilder.css.themes.Theme;
 /**
  * Implements the UI Darkness Theme
  *
- * @since 2014/07/05
- * @version 1.0
  * @author MMagon
- *
- *
+ * @version 1.0
+ * @since 2014/07/05
  */
 public class DarknessTheme extends Theme
 {
-
-    private static final long serialVersionUID = 1L;
-
-    /**
-     * Constructs a new instance of the darkness theme
-     */
-    public DarknessTheme()
-    {
-        super("UI-Darkness", "uidarkness", "bower_components/jquery-ui/themes/images/theme_30_ui_dark.png", "", "bower_components/jquery-ui/themes/images/theme_90_ui_dark.png");
-        getCssReferences().add(new CSSReference("darknessTheme", 1.121, "bower_components/jquery-ui/themes/ui-darkness/theme.css", "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/ui-darkness/theme.css"));
-        getCssReferences().add(new CSSReference("darknessTheme2", 1.121, "bower_components/jquery-ui/themes/ui-darkness/jquery-ui.css", "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/ui-darkness/jquery-ui.css"));
-    }
-
+	
+	private static final long serialVersionUID = 1L;
+	
+	/**
+	 * Constructs a new instance of the darkness theme
+	 */
+	public DarknessTheme()
+	{
+		super("UI-Darkness", "uidarkness", "bower_components/jquery-ui/themes/images/theme_30_ui_dark.png", "", "bower_components/jquery-ui/themes/images/theme_90_ui_dark.png");
+		getCssReferences().add(new CSSReference("darknessTheme", 1.121, "bower_components/jquery-ui/themes/ui-darkness/theme.css", "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/ui-darkness/theme.css"));
+		getCssReferences().add(new CSSReference("darknessTheme2", 1.121, "bower_components/jquery-ui/themes/ui-darkness/jquery-ui.css", "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/ui-darkness/jquery-ui.css"));
+	}
+	
 }

@@ -22,25 +22,23 @@ import za.co.mmagon.jwebswing.htmlbuilder.css.themes.Theme;
 /**
  * Implements the UI dotluv Theme
  *
- * @since 2014/07/05
- * @version 1.0
  * @author MMagon
- *
- *
+ * @version 1.0
+ * @since 2014/07/05
  */
 public class DotLuvTheme extends Theme
 {
 
-    private static final long serialVersionUID = 1L;
+	private static final long serialVersionUID = 1L;
 
-    /**
-     * Constructs a new instance of the dot luv theme
-     */
-    public DotLuvTheme()
-    {
-        super("Dot Luv", "uidotluv", "bower_components/jquery-ui/themes/images/theme_30_dot_luv.png", "", "bower_components/jquery-ui/themes/images/theme_90_dot_luv.png");
-        getCssReferences().add(new CSSReference("dotluvTheme", 1.121, "bower_components/jquery-ui/themes/dot-luv/theme.css", "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/dot-luv/theme.css"));
-        getCssReferences().add(new CSSReference("dotluvTheme2", 1.121, "bower_components/jquery-ui/themes/dot-luv/jquery-ui.css", "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/dot-luv/jquery-ui.css"));
-    }
+	/**
+	 * Constructs a new instance of the dot luv theme
+	 */
+	public DotLuvTheme()
+	{
+		super("Dot Luv", "uidotluv", "bower_components/jquery-ui/themes/images/theme_30_dot_luv.png", "", "bower_components/jquery-ui/themes/images/theme_90_dot_luv.png");
+		getCssReferences().add(new CSSReference("dotluvTheme", 1.121, "bower_components/jquery-ui/themes/dot-luv/theme.css", "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/dot-luv/theme.css"));
+		getCssReferences().add(new CSSReference("dotluvTheme2", 1.121, "bower_components/jquery-ui/themes/dot-luv/jquery-ui.css", "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/dot-luv/jquery-ui.css"));
+	}
 
 }

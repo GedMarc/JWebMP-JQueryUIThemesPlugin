@@ -22,22 +22,20 @@ import za.co.mmagon.jwebswing.htmlbuilder.css.themes.Theme;
 /**
  * The Smoothness theme from JQuery UI
  *
- * @since 2014/07/05
- * @version 1.0
  * @author MMagon
- *
- *
+ * @version 1.0
+ * @since 2014/07/05
  */
 class SmoothnessTheme extends Theme
 {
 
-    private static final long serialVersionUID = 1L;
+	private static final long serialVersionUID = 1L;
 
-    public SmoothnessTheme()
-    {
-        super("Smoothness", "uismoothness", "bower_components/jquery-ui/themes/images/theme_30_smoothness.png", "", "bower_components/jquery-ui/themes/images/theme_90_smoothness.png");
-        getCssReferences().add(new CSSReference("smoothnessTheme", 1.121, "bower_components/jquery-ui/themes/smoothness/theme.css", "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/theme.css"));
-        getCssReferences().add(new CSSReference("smoothnessTheme2", 1.121, "bower_components/jquery-ui/themes/smoothness/jquery-ui.css", "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css"));
-    }
+	public SmoothnessTheme()
+	{
+		super("Smoothness", "uismoothness", "bower_components/jquery-ui/themes/images/theme_30_smoothness.png", "", "bower_components/jquery-ui/themes/images/theme_90_smoothness.png");
+		getCssReferences().add(new CSSReference("smoothnessTheme", 1.121, "bower_components/jquery-ui/themes/smoothness/theme.css", "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/theme.css"));
+		getCssReferences().add(new CSSReference("smoothnessTheme2", 1.121, "bower_components/jquery-ui/themes/smoothness/jquery-ui.css", "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css"));
+	}
 
 }

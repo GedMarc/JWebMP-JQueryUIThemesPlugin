@@ -22,25 +22,23 @@ import za.co.mmagon.jwebswing.htmlbuilder.css.themes.Theme;
 /**
  * Implements the UI Darkness Theme
  *
- * @since 2014/07/05
- * @version 1.0
  * @author MMagon
- *
- *
+ * @version 1.0
+ * @since 2014/07/05
  */
 public class HumanityTheme extends Theme
 {
 
-    private static final long serialVersionUID = 1L;
+	private static final long serialVersionUID = 1L;
 
-    /**
-     * The humanity theme
-     */
-    public HumanityTheme()
-    {
-        super("Humanity", "uihumanity", "bower_components/jquery-ui/themes/images/theme_30_humanity.png", "", "bower_components/jquery-ui/themes/images/theme_90_humanity.png");
-        getCssReferences().add(new CSSReference("humanityTheme", 1.121, "bower_components/jquery-ui/themes/humanity/theme.css", "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/humanity/theme.css"));
-        getCssReferences().add(new CSSReference("humanityTheme2", 1.121, "bower_components/jquery-ui/themes/humanity/jquery-ui.css", "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/humanity/jquery-ui.css"));
-    }
+	/**
+	 * The humanity theme
+	 */
+	public HumanityTheme()
+	{
+		super("Humanity", "uihumanity", "bower_components/jquery-ui/themes/images/theme_30_humanity.png", "", "bower_components/jquery-ui/themes/images/theme_90_humanity.png");
+		getCssReferences().add(new CSSReference("humanityTheme", 1.121, "bower_components/jquery-ui/themes/humanity/theme.css", "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/humanity/theme.css"));
+		getCssReferences().add(new CSSReference("humanityTheme2", 1.121, "bower_components/jquery-ui/themes/humanity/jquery-ui.css", "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/humanity/jquery-ui.css"));
+	}
 
 }

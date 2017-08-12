@@ -22,25 +22,23 @@ import za.co.mmagon.jwebswing.htmlbuilder.css.themes.Theme;
 /**
  * The Dark Hive theme to JQuery UI
  *
- * @since 2012/02/04
- * @version
  * @author MMagon
- *
+ * @since 2012/02/04
  */
 public class FlickTheme extends Theme
 {
 
-    private static final long serialVersionUID = 1L;
+	private static final long serialVersionUID = 1L;
 
-    /**
-     * Constructs a new global flick theme
-     */
-    public FlickTheme()
-    {
-        super("Flick", "uiflick", "bower_components/jquery-ui/themes/images/theme_30_flick.png", "", "bower_components/jquery-ui/themes/images/theme_90_flick.png");
-        getCssReferences().add(new CSSReference("flickTheme", 1.121, "bower_components/jquery-ui/themes/flick/theme.css", "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/flick/theme.css"));
-        getCssReferences().add(new CSSReference("flickTheme2", 1.121, "bower_components/jquery-ui/themes/flick/jquery-ui.css", "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/flick/jquery-ui.css"));
+	/**
+	 * Constructs a new global flick theme
+	 */
+	public FlickTheme()
+	{
+		super("Flick", "uiflick", "bower_components/jquery-ui/themes/images/theme_30_flick.png", "", "bower_components/jquery-ui/themes/images/theme_90_flick.png");
+		getCssReferences().add(new CSSReference("flickTheme", 1.121, "bower_components/jquery-ui/themes/flick/theme.css", "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/flick/theme.css"));
+		getCssReferences().add(new CSSReference("flickTheme2", 1.121, "bower_components/jquery-ui/themes/flick/jquery-ui.css", "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/flick/jquery-ui.css"));
 
-    }
+	}
 
 }

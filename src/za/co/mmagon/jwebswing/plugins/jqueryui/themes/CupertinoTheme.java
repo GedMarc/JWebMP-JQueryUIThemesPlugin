@@ -22,25 +22,23 @@ import za.co.mmagon.jwebswing.htmlbuilder.css.themes.Theme;
 /**
  * Implements the UI Darkness Theme
  *
- * @since 2014/07/05
- * @version 1.0
  * @author MMagon
- *
- *
+ * @version 1.0
+ * @since 2014/07/05
  */
 public class CupertinoTheme extends Theme
 {
 
-    private static final long serialVersionUID = 1L;
+	private static final long serialVersionUID = 1L;
 
-    /**
-     * Constructs a new instance of the cupertino theme
-     */
-    public CupertinoTheme()
-    {
-        super("Cupertino", "uicupertino", "bower_components/jquery-ui/themes/images/theme_30_cupertino.png", "", "bower_components/jquery-ui/themes/images/theme_90_cupertino.png");
-        getCssReferences().add(new CSSReference("CupertinoTheme", 1.121, "bower_components/jquery-ui/themes/cupertino/theme.css", "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/cupertino/jtheme.css"));
-        getCssReferences().add(new CSSReference("CupertinoTheme", 1.121, "bower_components/jquery-ui/themes/cupertino/jquery-ui.css", "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/cupertino/jquery-ui.css"));
-    }
+	/**
+	 * Constructs a new instance of the cupertino theme
+	 */
+	public CupertinoTheme()
+	{
+		super("Cupertino", "uicupertino", "bower_components/jquery-ui/themes/images/theme_30_cupertino.png", "", "bower_components/jquery-ui/themes/images/theme_90_cupertino.png");
+		getCssReferences().add(new CSSReference("CupertinoTheme", 1.121, "bower_components/jquery-ui/themes/cupertino/theme.css", "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/cupertino/jtheme.css"));
+		getCssReferences().add(new CSSReference("CupertinoTheme", 1.121, "bower_components/jquery-ui/themes/cupertino/jquery-ui.css", "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/cupertino/jquery-ui.css"));
+	}
 
 }

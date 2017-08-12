@@ -22,25 +22,23 @@ import za.co.mmagon.jwebswing.htmlbuilder.css.themes.Theme;
 /**
  * Implements the UI Darkness Theme
  *
- * @since 2014/07/05
- * @version 1.0
  * @author MMagon
- *
- *
+ * @version 1.0
+ * @since 2014/07/05
  */
 public class SwankyPurseTheme extends Theme
 {
 
-    private static final long serialVersionUID = 1L;
+	private static final long serialVersionUID = 1L;
 
-    /**
-     * The purple swanky purse theme
-     */
-    public SwankyPurseTheme()
-    {
-        super("Swanky Purse", "uiswankypurse", "bower_components/jquery-ui/themes/images/theme_30_swanky_purse.png", "", "bower_components/jquery-ui/themes/images/theme_90_swanky_purse.png");
-        getCssReferences().add(new CSSReference("swankypurseTheme", 1.121, "bower_components/jquery-ui/themes/swanky-purse/theme.css", "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/swanky-purse/theme.css"));
-        getCssReferences().add(new CSSReference("swankypurseTheme2", 1.121, "bower_components/jquery-ui/themes/swanky-purse/jquery-ui.css", "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/swanky-purse/jquery-ui.css"));
-    }
+	/**
+	 * The purple swanky purse theme
+	 */
+	public SwankyPurseTheme()
+	{
+		super("Swanky Purse", "uiswankypurse", "bower_components/jquery-ui/themes/images/theme_30_swanky_purse.png", "", "bower_components/jquery-ui/themes/images/theme_90_swanky_purse.png");
+		getCssReferences().add(new CSSReference("swankypurseTheme", 1.121, "bower_components/jquery-ui/themes/swanky-purse/theme.css", "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/swanky-purse/theme.css"));
+		getCssReferences().add(new CSSReference("swankypurseTheme2", 1.121, "bower_components/jquery-ui/themes/swanky-purse/jquery-ui.css", "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/swanky-purse/jquery-ui.css"));
+	}
 
 }

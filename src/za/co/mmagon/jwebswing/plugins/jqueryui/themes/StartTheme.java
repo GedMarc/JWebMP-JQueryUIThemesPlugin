@@ -22,24 +22,22 @@ import za.co.mmagon.jwebswing.htmlbuilder.css.themes.Theme;
 /**
  * The Start Theme from JQuery Theme Roller
  *
- * @since 2014/07/05
- * @version 1.0
  * @author MMagon
- *
- *
+ * @version 1.0
+ * @since 2014/07/05
  */
 public class StartTheme extends Theme
 {
 
-    private static final long serialVersionUID = 1L;
+	private static final long serialVersionUID = 1L;
 
-    /**
-     * A new start theme
-     */
-    public StartTheme()
-    {
-        super("Start", "uistart", "bower_components/jquery-ui/themes/images/theme_30_start_menu.png", "", "bower_components/jquery-ui/themes/images/theme_90_start_menu.png");
-        getCssReferences().add(new CSSReference("startTheme", 1.121, "bower_components/jquery-ui/themes/start/theme.css", "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/start/theme.css"));
-        getCssReferences().add(new CSSReference("startTheme2", 1.121, "bower_components/jquery-ui/themes/start/jquery-ui.css", "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/start/jquery-ui.css"));
-    }
+	/**
+	 * A new start theme
+	 */
+	public StartTheme()
+	{
+		super("Start", "uistart", "bower_components/jquery-ui/themes/images/theme_30_start_menu.png", "", "bower_components/jquery-ui/themes/images/theme_90_start_menu.png");
+		getCssReferences().add(new CSSReference("startTheme", 1.121, "bower_components/jquery-ui/themes/start/theme.css", "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/start/theme.css"));
+		getCssReferences().add(new CSSReference("startTheme2", 1.121, "bower_components/jquery-ui/themes/start/jquery-ui.css", "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/start/jquery-ui.css"));
+	}
 }

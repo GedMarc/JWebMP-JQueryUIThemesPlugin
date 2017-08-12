@@ -26,44 +26,44 @@ import za.co.mmagon.jwebswing.htmlbuilder.css.themes.Theme;
  */
 public enum JQUIThemes
 {
-    BlackTie(new BlackTieTheme()),
-    Blitzer(new BlizterTheme()),
-    Cupertino(new CupertinoTheme()),
-    DarkHive(new DarkHiveTheme()),
-    DotLuv(new DotLuvTheme()),
-    Eggplant(new EggplantTheme()),
-    ExciteBike(new ExciteBikeTheme()),
-    Flick(new FlickTheme()),
-    HotSneak(new HotSneaksTheme()),
-    Humanity(new HumanityTheme()),
-    LeFrog(new LeFrogTheme()),
-    Lightness(new LightnessTheme()),
-    Overcast(new OvercastTheme()),
-    PepperGrinder(new PepperGrinderTheme()),
-    Redmond(new RedmondTheme()),
-    Smoothness(new SmoothnessTheme()),
-    SouthStreet(new SouthStreetTheme()),
-    Start(new StartTheme()),
-    Sunny(new SunnyTheme()),
-    SwankyPurse(new SwankyPurseTheme()),
-    Trontastic(new TrontasticTheme()),
-    Vader(new VaderTheme()),;
-    private Theme theme;
+	BlackTie(new BlackTieTheme()),
+	Blitzer(new BlizterTheme()),
+	Cupertino(new CupertinoTheme()),
+	DarkHive(new DarkHiveTheme()),
+	DotLuv(new DotLuvTheme()),
+	Eggplant(new EggplantTheme()),
+	ExciteBike(new ExciteBikeTheme()),
+	Flick(new FlickTheme()),
+	HotSneak(new HotSneaksTheme()),
+	Humanity(new HumanityTheme()),
+	LeFrog(new LeFrogTheme()),
+	Lightness(new LightnessTheme()),
+	Overcast(new OvercastTheme()),
+	PepperGrinder(new PepperGrinderTheme()),
+	Redmond(new RedmondTheme()),
+	Smoothness(new SmoothnessTheme()),
+	SouthStreet(new SouthStreetTheme()),
+	Start(new StartTheme()),
+	Sunny(new SunnyTheme()),
+	SwankyPurse(new SwankyPurseTheme()),
+	Trontastic(new TrontasticTheme()),
+	Vader(new VaderTheme()),;
+	private Theme theme;
 
-    private JQUIThemes(Theme theme)
-    {
-        this.theme = theme;
-    }
+	private JQUIThemes(Theme theme)
+	{
+		this.theme = theme;
+	}
 
-    public Theme getTheme()
-    {
-        return theme;
-    }
+	public Theme getTheme()
+	{
+		return theme;
+	}
 
-    @Override
-    public String toString()
-    {
-        return super.toString().toLowerCase();
-    }
+	@Override
+	public String toString()
+	{
+		return super.toString().toLowerCase();
+	}
 
 }

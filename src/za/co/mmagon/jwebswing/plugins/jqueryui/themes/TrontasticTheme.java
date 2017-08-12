@@ -22,25 +22,23 @@ import za.co.mmagon.jwebswing.htmlbuilder.css.themes.Theme;
 /**
  * Implements the UI Darkness Theme
  *
- * @since 2014/07/05
- * @version 1.0
  * @author MMagon
- *
- *
+ * @version 1.0
+ * @since 2014/07/05
  */
 public class TrontasticTheme extends Theme
 {
 
-    private static final long serialVersionUID = 1L;
+	private static final long serialVersionUID = 1L;
 
-    /**
-     * The trontastic theme
-     */
-    public TrontasticTheme()
-    {
-        super("Trontastic", "uitrontastic", "bower_components/jquery-ui/themes/images/theme_30_trontastic.png", "", "bower_components/jquery-ui/themes/images/theme_90_trontastic.png");
-        getCssReferences().add(new CSSReference("trontasticTheme", 1.121, "bower_components/jquery-ui/themes/trontastic/theme.css", "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/trontastic/theme.css"));
-        getCssReferences().add(new CSSReference("trontasticTheme2", 1.121, "bower_components/jquery-ui/themes/trontastic/jquery-ui.css", "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/trontastic/jquery-ui.css"));
-    }
+	/**
+	 * The trontastic theme
+	 */
+	public TrontasticTheme()
+	{
+		super("Trontastic", "uitrontastic", "bower_components/jquery-ui/themes/images/theme_30_trontastic.png", "", "bower_components/jquery-ui/themes/images/theme_90_trontastic.png");
+		getCssReferences().add(new CSSReference("trontasticTheme", 1.121, "bower_components/jquery-ui/themes/trontastic/theme.css", "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/trontastic/theme.css"));
+		getCssReferences().add(new CSSReference("trontasticTheme2", 1.121, "bower_components/jquery-ui/themes/trontastic/jquery-ui.css", "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/trontastic/jquery-ui.css"));
+	}
 
 }

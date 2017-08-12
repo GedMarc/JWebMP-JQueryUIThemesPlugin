@@ -22,25 +22,24 @@ import za.co.mmagon.jwebswing.htmlbuilder.css.themes.Theme;
 /**
  * Implements the UI-Lightness Theme from JQuery UI Theme Roller
  *
- * @since 2014/07/05
- * @version 1.0
  * @author MMagon
- *
+ * @version 1.0
+ * @since 2014/07/05
  */
 public class SouthStreetTheme extends Theme
 {
 
-    private static final long serialVersionUID = 1L;
+	private static final long serialVersionUID = 1L;
 
-    /**
-     *
-     */
-    public SouthStreetTheme()
-    {
-        super("South Street", "uisouthstreet", "bower_components/jquery-ui/themes/images/theme_30_south_street.png", "", "bower_components/jquery-ui/themes/images/theme_90_south_street.png");
-        getCssReferences().add(new CSSReference("southstreetTheme", 1.121, "bower_components/jquery-ui/themes/south-street/theme.css", "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/south-street/theme.css"));
-        getCssReferences().add(new CSSReference("southstreetTheme2", 1.121, "bower_components/jquery-ui/themes/south-street/jquery-ui.css", "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/south-street/jquery-ui.css"));
+	/**
+	 *
+	 */
+	public SouthStreetTheme()
+	{
+		super("South Street", "uisouthstreet", "bower_components/jquery-ui/themes/images/theme_30_south_street.png", "", "bower_components/jquery-ui/themes/images/theme_90_south_street.png");
+		getCssReferences().add(new CSSReference("southstreetTheme", 1.121, "bower_components/jquery-ui/themes/south-street/theme.css", "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/south-street/theme.css"));
+		getCssReferences().add(new CSSReference("southstreetTheme2", 1.121, "bower_components/jquery-ui/themes/south-street/jquery-ui.css", "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/south-street/jquery-ui.css"));
 
-    }
+	}
 
 }

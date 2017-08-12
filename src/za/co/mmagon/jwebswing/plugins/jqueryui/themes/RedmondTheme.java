@@ -22,25 +22,23 @@ import za.co.mmagon.jwebswing.htmlbuilder.css.themes.Theme;
 /**
  * The Dark Hive theme to JQuery UI
  *
- * @since 2012/02/04
- * @version
  * @author MMagon
- *
+ * @since 2012/02/04
  */
 public class RedmondTheme extends Theme
 {
 
-    private static final long serialVersionUID = 1L;
+	private static final long serialVersionUID = 1L;
 
-    /**
-     * A global redmond theme
-     */
-    public RedmondTheme()
-    {
-        super("Redmond", "uiredmond", "bower_components/jquery-ui/themes/images/theme_30_redmond.png", "", "bower_components/jquery-ui/themes/images/theme_90_redmond.png");
-        getCssReferences().add(new CSSReference("redmondTheme", 1.121, "bower_components/jquery-ui/themes/redmond/theme.css", "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/redmond/theme.css"));
-        getCssReferences().add(new CSSReference("redmondTheme2", 1.121, "bower_components/jquery-ui/themes/redmond/jquery-ui.css", "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/redmond/jquery-ui.css"));
+	/**
+	 * A global redmond theme
+	 */
+	public RedmondTheme()
+	{
+		super("Redmond", "uiredmond", "bower_components/jquery-ui/themes/images/theme_30_redmond.png", "", "bower_components/jquery-ui/themes/images/theme_90_redmond.png");
+		getCssReferences().add(new CSSReference("redmondTheme", 1.121, "bower_components/jquery-ui/themes/redmond/theme.css", "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/redmond/theme.css"));
+		getCssReferences().add(new CSSReference("redmondTheme2", 1.121, "bower_components/jquery-ui/themes/redmond/jquery-ui.css", "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/redmond/jquery-ui.css"));
 
-    }
+	}
 
 }

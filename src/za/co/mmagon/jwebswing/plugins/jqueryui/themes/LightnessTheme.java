@@ -22,24 +22,23 @@ import za.co.mmagon.jwebswing.htmlbuilder.css.themes.Theme;
 /**
  * Implements the UI-Lightness Theme from JQuery UI Theme Roller
  *
- * @since 2014/07/05
- * @version 1.0
  * @author MMagon
- *
+ * @version 1.0
+ * @since 2014/07/05
  */
 public class LightnessTheme extends Theme
 {
 
-    private static final long serialVersionUID = 1L;
+	private static final long serialVersionUID = 1L;
 
-    /**
-     * A new lightness theme
-     */
-    public LightnessTheme()
-    {
-        super("UI-Lightness", "uilightness", "bower_components/jquery-ui/themes/images/theme_30_ui_light.png", "", "bower_components/jquery-ui/themes/images/theme_90_ui_light.png");
-        getCssReferences().add(new CSSReference("lightnessTheme", 1.121, "bower_components/jquery-ui/themes/ui-lightness/theme.css", "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/ui-lightness/theme.css"));
-        getCssReferences().add(new CSSReference("lightnessTheme2", 1.121, "bower_components/jquery-ui/themes/ui-lightness/jquery-ui.css", "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/ui-lightness/jquery-ui.css"));
-    }
+	/**
+	 * A new lightness theme
+	 */
+	public LightnessTheme()
+	{
+		super("UI-Lightness", "uilightness", "bower_components/jquery-ui/themes/images/theme_30_ui_light.png", "", "bower_components/jquery-ui/themes/images/theme_90_ui_light.png");
+		getCssReferences().add(new CSSReference("lightnessTheme", 1.121, "bower_components/jquery-ui/themes/ui-lightness/theme.css", "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/ui-lightness/theme.css"));
+		getCssReferences().add(new CSSReference("lightnessTheme2", 1.121, "bower_components/jquery-ui/themes/ui-lightness/jquery-ui.css", "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/ui-lightness/jquery-ui.css"));
+	}
 
 }
