@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright (C) 2017 Marc Magon
  *
  * This program is free software: you can redistribute it and/or modify
@@ -37,8 +37,13 @@ public class CupertinoTheme extends Theme
 	public CupertinoTheme()
 	{
 		super("Cupertino", "uicupertino", "bower_components/jquery-ui/themes/images/theme_30_cupertino.png", "", "bower_components/jquery-ui/themes/images/theme_90_cupertino.png");
-		getCssReferences().add(new CSSReference("CupertinoTheme", 1.121, "bower_components/jquery-ui/themes/cupertino/theme.css", "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/cupertino/jtheme.css"));
-		getCssReferences().add(new CSSReference("CupertinoTheme", 1.121, "bower_components/jquery-ui/themes/cupertino/jquery-ui.css", "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/cupertino/jquery-ui.css"));
+		getCssReferences().add(new CSSReference("CupertinoTheme", 1.121, "bower_components/jquery-ui/themes/cupertino/theme.css",
+		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/cupertino/jtheme.css")
+				                       .setSpecifiedClassName(
+				"jquitheme"));
+		getCssReferences().add(new CSSReference("CupertinoTheme", 1.121, "bower_components/jquery-ui/themes/cupertino/jquery-ui.css",
+		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/cupertino/jquery-ui.css").setSpecifiedClassName(
+				"jquitheme"));
 	}
 
 }

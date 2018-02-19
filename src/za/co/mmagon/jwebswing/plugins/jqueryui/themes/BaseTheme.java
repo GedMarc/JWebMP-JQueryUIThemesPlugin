@@ -26,24 +26,22 @@ import za.co.mmagon.jwebswing.htmlbuilder.css.themes.Theme;
  * @version 1.0
  * @since 2014/07/05
  */
-public class HotSneaksTheme extends Theme
+public class BaseTheme extends Theme
 {
 
 	private static final long serialVersionUID = 1L;
 
-	/**
-	 * New hot sneaks theme
-	 */
-	public HotSneaksTheme()
+	public BaseTheme()
 	{
-		super("Hot Sneaks", "uihotsneaks", "bower_components/jquery-ui/themes/images/theme_30_hot_sneaks.png", "", "bower_components/jquery-ui/themes/images/theme_90_hot_sneaks.png");
-		getCssReferences().add(new CSSReference("hotsneaksTheme", 1.121, "bower_components/jquery-ui/themes/hot-sneaks/theme.css",
-		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/hot-sneaks/theme.css")
+		super("BaseTheme");
+		getCssReferences().add(new CSSReference("BaseTheme", 1.121, "bower_components/jquery-ui/themes/base/theme.css",
+		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/base/theme.css")
 				                       .setSpecifiedClassName(
 				"jquitheme"));
-		getCssReferences().add(new CSSReference("hotsneaksTheme2", 1.121, "bower_components/jquery-ui/themes/hot-sneaks/jquery-ui.css",
-		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/hot-sneaks/jquery-ui.css").setSpecifiedClassName(
+		getCssReferences().add(new CSSReference("BaseTheme2", 1.121, "bower_components/jquery-ui/themes/base/jquery-ui.css",
+		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.css").setSpecifiedClassName(
 				"jquitheme"));
+
 	}
 
 }
