@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright (C) 2017 Marc Magon
  *
  * This program is free software: you can redistribute it and/or modify
@@ -37,7 +37,12 @@ public class StartTheme extends Theme
 	public StartTheme()
 	{
 		super("Start", "uistart", "bower_components/jquery-ui/themes/images/theme_30_start_menu.png", "", "bower_components/jquery-ui/themes/images/theme_90_start_menu.png");
-		getCssReferences().add(new CSSReference("startTheme", 1.121, "bower_components/jquery-ui/themes/start/theme.css", "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/start/theme.css"));
-		getCssReferences().add(new CSSReference("startTheme2", 1.121, "bower_components/jquery-ui/themes/start/jquery-ui.css", "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/start/jquery-ui.css"));
+		getCssReferences().add(new CSSReference("startTheme", 1.121, "bower_components/jquery-ui/themes/start/theme.css",
+		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/start/theme.css")
+				                       .setSpecifiedClassName(
+				"jquitheme"));
+		getCssReferences().add(new CSSReference("startTheme2", 1.121, "bower_components/jquery-ui/themes/start/jquery-ui.css",
+		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/start/jquery-ui.css").setSpecifiedClassName(
+				"jquitheme"));
 	}
 }

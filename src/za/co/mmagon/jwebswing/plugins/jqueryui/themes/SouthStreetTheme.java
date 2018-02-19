@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright (C) 2017 Marc Magon
  *
  * This program is free software: you can redistribute it and/or modify
@@ -37,8 +37,13 @@ public class SouthStreetTheme extends Theme
 	public SouthStreetTheme()
 	{
 		super("South Street", "uisouthstreet", "bower_components/jquery-ui/themes/images/theme_30_south_street.png", "", "bower_components/jquery-ui/themes/images/theme_90_south_street.png");
-		getCssReferences().add(new CSSReference("southstreetTheme", 1.121, "bower_components/jquery-ui/themes/south-street/theme.css", "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/south-street/theme.css"));
-		getCssReferences().add(new CSSReference("southstreetTheme2", 1.121, "bower_components/jquery-ui/themes/south-street/jquery-ui.css", "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/south-street/jquery-ui.css"));
+		getCssReferences().add(new CSSReference("southstreetTheme", 1.121, "bower_components/jquery-ui/themes/south-street/theme.css",
+		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/south-street/theme.css")
+				                       .setSpecifiedClassName(
+				"jquitheme"));
+		getCssReferences().add(new CSSReference("southstreetTheme2", 1.121, "bower_components/jquery-ui/themes/south-street/jquery-ui.css",
+		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/south-street/jquery-ui.css").setSpecifiedClassName(
+				"jquitheme"));
 
 	}
 

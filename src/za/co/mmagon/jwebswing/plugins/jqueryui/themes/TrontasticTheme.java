@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright (C) 2017 Marc Magon
  *
  * This program is free software: you can redistribute it and/or modify
@@ -37,8 +37,13 @@ public class TrontasticTheme extends Theme
 	public TrontasticTheme()
 	{
 		super("Trontastic", "uitrontastic", "bower_components/jquery-ui/themes/images/theme_30_trontastic.png", "", "bower_components/jquery-ui/themes/images/theme_90_trontastic.png");
-		getCssReferences().add(new CSSReference("trontasticTheme", 1.121, "bower_components/jquery-ui/themes/trontastic/theme.css", "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/trontastic/theme.css"));
-		getCssReferences().add(new CSSReference("trontasticTheme2", 1.121, "bower_components/jquery-ui/themes/trontastic/jquery-ui.css", "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/trontastic/jquery-ui.css"));
+		getCssReferences().add(new CSSReference("trontasticTheme", 1.121, "bower_components/jquery-ui/themes/trontastic/theme.css",
+		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/trontastic/theme.css")
+				                       .setSpecifiedClassName(
+				"jquitheme"));
+		getCssReferences().add(new CSSReference("trontasticTheme2", 1.121, "bower_components/jquery-ui/themes/trontastic/jquery-ui.css",
+		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/trontastic/jquery-ui.css").setSpecifiedClassName(
+				"jquitheme"));
 	}
 
 }

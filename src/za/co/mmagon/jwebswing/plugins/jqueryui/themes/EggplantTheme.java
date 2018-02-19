@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright (C) 2017 Marc Magon
  *
  * This program is free software: you can redistribute it and/or modify
@@ -34,8 +34,13 @@ public class EggplantTheme extends Theme
 	public EggplantTheme()
 	{
 		super("Eggplant", "uieggplant", "bower_components/jquery-ui/themes/images/theme_30_eggplant.png", "", "bower_components/jquery-ui/themes/images/theme_90_eggplant.png");
-		getCssReferences().add(new CSSReference("eggplantTheme", 1.114, "bower_components/jquery-ui/themes/eggplant/theme.css", "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/eggplant/theme.css"));
-		getCssReferences().add(new CSSReference("eggplantTheme1", 1.114, "bower_components/jquery-ui/themes/eggplant/jquery-ui.css", "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/eggplant/jquery-ui.css"));
+		getCssReferences().add(new CSSReference("eggplantTheme", 1.114, "bower_components/jquery-ui/themes/eggplant/theme.css",
+		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/eggplant/theme.css")
+				                       .setSpecifiedClassName(
+				"jquitheme"));
+		getCssReferences().add(new CSSReference("eggplantTheme1", 1.114, "bower_components/jquery-ui/themes/eggplant/jquery-ui.css",
+		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/eggplant/jquery-ui.css").setSpecifiedClassName(
+				"jquitheme"));
 	}
 
 }

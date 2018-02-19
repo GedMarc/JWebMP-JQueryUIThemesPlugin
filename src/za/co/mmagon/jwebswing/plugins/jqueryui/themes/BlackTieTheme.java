@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright (C) 2017 Marc Magon
  *
  * This program is free software: you can redistribute it and/or modify
@@ -34,8 +34,13 @@ public class BlackTieTheme extends Theme
 	public BlackTieTheme()
 	{
 		super("Black Tie");
-		getCssReferences().add(new CSSReference("BlackTieTheme2", 1.121, "bower_components/jquery-ui/themes/black-tie/theme.css", "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/black-tie/theme.css"));
-		getCssReferences().add(new CSSReference("BlackTieTheme", 1.121, "bower_components/jquery-ui/themes/black-tie/jquery-ui.css", "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/black-tie/jquery-ui.css"));
+		getCssReferences().add(new CSSReference("BlackTieTheme2", 1.121, "bower_components/jquery-ui/themes/black-tie/theme.css",
+		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/black-tie/theme.css")
+				                       .setSpecifiedClassName(
+				"jquitheme"));
+		getCssReferences().add(new CSSReference("BlackTieTheme", 1.121, "bower_components/jquery-ui/themes/black-tie/jquery-ui.css",
+		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/black-tie/jquery-ui.css").setSpecifiedClassName(
+				"jquitheme"));
 
 	}
 

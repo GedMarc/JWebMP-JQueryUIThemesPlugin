@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright (C) 2017 Marc Magon
  *
  * This program is free software: you can redistribute it and/or modify
@@ -36,8 +36,13 @@ public class RedmondTheme extends Theme
 	public RedmondTheme()
 	{
 		super("Redmond", "uiredmond", "bower_components/jquery-ui/themes/images/theme_30_redmond.png", "", "bower_components/jquery-ui/themes/images/theme_90_redmond.png");
-		getCssReferences().add(new CSSReference("redmondTheme", 1.121, "bower_components/jquery-ui/themes/redmond/theme.css", "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/redmond/theme.css"));
-		getCssReferences().add(new CSSReference("redmondTheme2", 1.121, "bower_components/jquery-ui/themes/redmond/jquery-ui.css", "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/redmond/jquery-ui.css"));
+		getCssReferences().add(new CSSReference("redmondTheme", 1.121, "bower_components/jquery-ui/themes/redmond/theme.css",
+		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/redmond/theme.css")
+				                       .setSpecifiedClassName(
+				"jquitheme"));
+		getCssReferences().add(new CSSReference("redmondTheme2", 1.121, "bower_components/jquery-ui/themes/redmond/jquery-ui.css",
+		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/redmond/jquery-ui.css").setSpecifiedClassName(
+				"jquitheme"));
 
 	}
 

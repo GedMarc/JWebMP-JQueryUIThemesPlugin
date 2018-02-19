@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright (C) 2017 Marc Magon
  *
  * This program is free software: you can redistribute it and/or modify
@@ -34,8 +34,13 @@ class SmoothnessTheme extends Theme
 	public SmoothnessTheme()
 	{
 		super("Smoothness", "uismoothness", "bower_components/jquery-ui/themes/images/theme_30_smoothness.png", "", "bower_components/jquery-ui/themes/images/theme_90_smoothness.png");
-		getCssReferences().add(new CSSReference("smoothnessTheme", 1.121, "bower_components/jquery-ui/themes/smoothness/theme.css", "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/theme.css"));
-		getCssReferences().add(new CSSReference("smoothnessTheme2", 1.121, "bower_components/jquery-ui/themes/smoothness/jquery-ui.css", "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css"));
+		getCssReferences().add(new CSSReference("smoothnessTheme", 1.121, "bower_components/jquery-ui/themes/smoothness/theme.css",
+		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/theme.css")
+				                       .setSpecifiedClassName(
+				"jquitheme"));
+		getCssReferences().add(new CSSReference("smoothnessTheme2", 1.121, "bower_components/jquery-ui/themes/smoothness/jquery-ui.css",
+		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css").setSpecifiedClassName(
+				"jquitheme"));
 	}
 
 }

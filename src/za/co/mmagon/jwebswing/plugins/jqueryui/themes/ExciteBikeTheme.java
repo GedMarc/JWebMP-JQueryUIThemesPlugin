@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright (C) 2017 Marc Magon
  *
  * This program is free software: you can redistribute it and/or modify
@@ -28,17 +28,22 @@ import za.co.mmagon.jwebswing.htmlbuilder.css.themes.Theme;
  */
 public class ExciteBikeTheme extends Theme
 {
-	
+
 	private static final long serialVersionUID = 1L;
-	
+
 	/**
 	 * Constructs a new instance of the excite bike
 	 */
 	public ExciteBikeTheme()
 	{
 		super("Excite Bike", "uiexcitebike", "bower_components/jquery-ui/themes/images/theme_30_excite_bike.png", "", "bower_components/jquery-ui/themes/images/theme_90_excite_bike.png");
-		getCssReferences().add(new CSSReference("uiexcitebike", 1.121, "bower_components/jquery-ui/themes/excite-bike/theme.css", "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/excite-bike/theme.css"));
-		getCssReferences().add(new CSSReference("uiexcitebike2", 1.121, "bower_components/jquery-ui/themes/excite-bike/jquery-ui.css", "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/excite-bike/jquery-ui.css"));
+		getCssReferences().add(new CSSReference("uiexcitebike", 1.121, "bower_components/jquery-ui/themes/excite-bike/theme.css",
+		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/excite-bike/theme.css")
+				                       .setSpecifiedClassName(
+				"jquitheme"));
+		getCssReferences().add(new CSSReference("uiexcitebike2", 1.121, "bower_components/jquery-ui/themes/excite-bike/jquery-ui.css",
+		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/excite-bike/jquery-ui.css").setSpecifiedClassName(
+				"jquitheme"));
 	}
-	
+
 }

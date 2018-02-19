@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright (C) 2017 Marc Magon
  *
  * This program is free software: you can redistribute it and/or modify
@@ -37,8 +37,13 @@ public class OvercastTheme extends Theme
 	public OvercastTheme()
 	{
 		super("Overcast", "uiovercast", "bower_components/jquery-ui/themes/images/theme_30_overcast.png", "", "bower_components/jquery-ui/themes/images/theme_90_overcast.png");
-		getCssReferences().add(new CSSReference("overcastTheme", 1.121, "bower_components/jquery-ui/themes/overcast/theme.css", "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/overcast/theme.css"));
-		getCssReferences().add(new CSSReference("overcastTheme2", 1.121, "bower_components/jquery-ui/themes/overcast/jquery-ui.css", "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/overcast/jquery-ui.css"));
+		getCssReferences().add(new CSSReference("overcastTheme", 1.121, "bower_components/jquery-ui/themes/overcast/theme.css",
+		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/overcast/theme.css")
+				                       .setSpecifiedClassName(
+				"jquitheme"));
+		getCssReferences().add(new CSSReference("overcastTheme2", 1.121, "bower_components/jquery-ui/themes/overcast/jquery-ui.css",
+		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/overcast/jquery-ui.css").setSpecifiedClassName(
+				"jquitheme"));
 	}
 
 }

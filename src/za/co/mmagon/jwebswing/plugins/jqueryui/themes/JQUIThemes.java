@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright (C) 2017 Marc Magon
  *
  * This program is free software: you can redistribute it and/or modify
@@ -26,6 +26,7 @@ import za.co.mmagon.jwebswing.htmlbuilder.css.themes.Theme;
  */
 public enum JQUIThemes
 {
+	Base(new BaseTheme()),
 	BlackTie(new BlackTieTheme()),
 	Blitzer(new BlizterTheme()),
 	Cupertino(new CupertinoTheme()),
@@ -50,7 +51,7 @@ public enum JQUIThemes
 	Vader(new VaderTheme()),;
 	private Theme theme;
 
-	private JQUIThemes(Theme theme)
+	JQUIThemes(Theme theme)
 	{
 		this.theme = theme;
 	}

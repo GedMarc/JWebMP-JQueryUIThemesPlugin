@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright (C) 2017 Marc Magon
  *
  * This program is free software: you can redistribute it and/or modify
@@ -37,8 +37,13 @@ public class SwankyPurseTheme extends Theme
 	public SwankyPurseTheme()
 	{
 		super("Swanky Purse", "uiswankypurse", "bower_components/jquery-ui/themes/images/theme_30_swanky_purse.png", "", "bower_components/jquery-ui/themes/images/theme_90_swanky_purse.png");
-		getCssReferences().add(new CSSReference("swankypurseTheme", 1.121, "bower_components/jquery-ui/themes/swanky-purse/theme.css", "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/swanky-purse/theme.css"));
-		getCssReferences().add(new CSSReference("swankypurseTheme2", 1.121, "bower_components/jquery-ui/themes/swanky-purse/jquery-ui.css", "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/swanky-purse/jquery-ui.css"));
+		getCssReferences().add(new CSSReference("swankypurseTheme", 1.121, "bower_components/jquery-ui/themes/swanky-purse/theme.css",
+		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/swanky-purse/theme.css")
+				                       .setSpecifiedClassName(
+				"jquitheme"));
+		getCssReferences().add(new CSSReference("swankypurseTheme2", 1.121, "bower_components/jquery-ui/themes/swanky-purse/jquery-ui.css",
+		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/swanky-purse/jquery-ui.css").setSpecifiedClassName(
+				"jquitheme"));
 	}
 
 }
