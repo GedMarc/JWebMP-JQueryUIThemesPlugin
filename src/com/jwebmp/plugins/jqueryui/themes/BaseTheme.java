@@ -26,7 +26,8 @@ import com.jwebmp.htmlbuilder.css.themes.Theme;
  * @version 1.0
  * @since 2014/07/05
  */
-public class BaseTheme extends Theme
+public class BaseTheme
+		extends Theme
 {
 
 	private static final long serialVersionUID = 1L;
@@ -35,12 +36,9 @@ public class BaseTheme extends Theme
 	{
 		super("BaseTheme");
 		getCssReferences().add(new CSSReference("BaseTheme", 1.121, "bower_components/jquery-ui/themes/base/theme.css",
-		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/base/theme.css")
-				                       .setSpecifiedClassName(
-				"jquitheme"));
+		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/base/theme.css").setSpecifiedClassName("jquitheme-core"));
 		getCssReferences().add(new CSSReference("BaseTheme2", 1.121, "bower_components/jquery-ui/themes/base/jquery-ui.css",
-		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.css").setSpecifiedClassName(
-				"jquitheme"));
+		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.css").setSpecifiedClassName("jquitheme-core"));
 
 	}
 

@@ -25,7 +25,8 @@ import com.jwebmp.htmlbuilder.css.themes.Theme;
  * @author MMagon
  * @since 2012/02/04
  */
-public class DarkHiveTheme extends Theme
+public class DarkHiveTheme
+		extends Theme
 {
 
 	private static final long serialVersionUID = 1L;
@@ -33,13 +34,10 @@ public class DarkHiveTheme extends Theme
 	public DarkHiveTheme()
 	{
 		super("Dark Hive", "darkhive", "bower_components/jquery-ui/themes/images/theme_30_dark_hive.png", "", "bower_components/jquery-ui/themes/images/theme_90_dark_hive.png");
-		getCssReferences().add(new CSSReference("DarkHiveTheme", 1.121, "bower_components/jquery-ui/themes/theme.css",
-		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/dark-hive/theme.css")
-				                       .setSpecifiedClassName(
-				"jquitheme"));
-		getCssReferences().add(new CSSReference("DarkHiveTheme2", 1.121, "bower_components/jquery-ui/themes/jquery-ui.css",
-		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/dark-hive/jquery-ui.css").setSpecifiedClassName(
-				"jquitheme"));
+		getCssReferences().add(new CSSReference("DarkHiveTheme", 1.121, "bower_components/jquery-ui/themes/dark-hive/theme.css",
+		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/dark-hive/theme.css").setSpecifiedClassName("jquitheme"));
+		getCssReferences().add(new CSSReference("DarkHiveTheme2", 1.121, "bower_components/jquery-ui/themes/dark-hive/jquery-ui.css",
+		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/dark-hive/jquery-ui.css").setSpecifiedClassName("jquitheme"));
 
 	}
 
