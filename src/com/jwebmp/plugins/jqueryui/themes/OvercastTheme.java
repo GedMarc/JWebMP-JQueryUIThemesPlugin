@@ -26,7 +26,8 @@ import com.jwebmp.htmlbuilder.css.themes.Theme;
  * @version 1.0
  * @since 2014/07/05
  */
-public class OvercastTheme extends Theme
+public class OvercastTheme
+		extends Theme
 {
 
 	private static final long serialVersionUID = 1L;
@@ -37,13 +38,10 @@ public class OvercastTheme extends Theme
 	public OvercastTheme()
 	{
 		super("Overcast", "uiovercast", "bower_components/jquery-ui/themes/images/theme_30_overcast.png", "", "bower_components/jquery-ui/themes/images/theme_90_overcast.png");
-		getCssReferences().add(new CSSReference("overcastTheme", 1.121, "bower_components/jquery-ui/themes/overcast/theme.css",
-		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/overcast/theme.css")
-				                       .setSpecifiedClassName(
-				"jquitheme"));
-		getCssReferences().add(new CSSReference("overcastTheme2", 1.121, "bower_components/jquery-ui/themes/overcast/jquery-ui.css",
-		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/overcast/jquery-ui.css").setSpecifiedClassName(
-				"jquitheme"));
+		getCssReferences().add(new CSSReference("overcastTheme", 1.121, "bower_components/jquery-ui/themes/overcast/theme.min.css",
+		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/overcast/theme.min.css").setSpecifiedClassName("jquitheme"));
+		getCssReferences().add(new CSSReference("overcastTheme2", 1.121, "bower_components/jquery-ui/themes/overcast/jquery-ui.min.css",
+		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/overcast/jquery-ui.min.css").setSpecifiedClassName("jquitheme"));
 	}
 
 }

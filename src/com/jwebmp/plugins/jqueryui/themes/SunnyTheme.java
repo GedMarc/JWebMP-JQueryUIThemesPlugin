@@ -26,7 +26,8 @@ import com.jwebmp.htmlbuilder.css.themes.Theme;
  * @version 1.0
  * @since 2014/07/05
  */
-public class SunnyTheme extends Theme
+public class SunnyTheme
+		extends Theme
 {
 
 	private static final long serialVersionUID = 1L;
@@ -36,15 +37,10 @@ public class SunnyTheme extends Theme
 	 */
 	public SunnyTheme()
 	{
-		super("Sunny", "uisunny", "bower_components/jquery-ui/themes/images/theme_30_sunny.png", "",
-		      "bower_components/jquery-ui/themes/images/theme_30_sunny.png");
-		getCssReferences().add(new CSSReference("sunnyTheme", 1.121, "bower_components/jquery-ui/themes/sunny/theme.css",
-		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/sunny/theme.css")
-				                       .setSpecifiedClassName(
-				"jquitheme"));
-		getCssReferences().add(new CSSReference("sunnyTheme2", 1.121, "bower_components/jquery-ui/themes/sunny/jquery-ui.css",
-		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/sunny/jquery-ui.css")
-				                       .setSpecifiedClassName(
-				"jquitheme"));
+		super("Sunny", "uisunny", "bower_components/jquery-ui/themes/images/theme_30_sunny.png", "", "bower_components/jquery-ui/themes/images/theme_30_sunny.png");
+		getCssReferences().add(new CSSReference("sunnyTheme", 1.121, "bower_components/jquery-ui/themes/sunny/theme.min.css",
+		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/sunny/theme.min.css").setSpecifiedClassName("jquitheme"));
+		getCssReferences().add(new CSSReference("sunnyTheme2", 1.121, "bower_components/jquery-ui/themes/sunny/jquery-ui.min.css",
+		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/sunny/jquery-ui.min.css").setSpecifiedClassName("jquitheme"));
 	}
 }

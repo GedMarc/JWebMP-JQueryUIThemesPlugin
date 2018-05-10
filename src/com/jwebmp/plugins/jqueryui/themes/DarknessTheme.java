@@ -26,7 +26,8 @@ import com.jwebmp.htmlbuilder.css.themes.Theme;
  * @version 1.0
  * @since 2014/07/05
  */
-public class DarknessTheme extends Theme
+public class DarknessTheme
+		extends Theme
 {
 
 	private static final long serialVersionUID = 1L;
@@ -37,13 +38,10 @@ public class DarknessTheme extends Theme
 	public DarknessTheme()
 	{
 		super("UI-Darkness", "uidarkness", "bower_components/jquery-ui/themes/images/theme_30_ui_dark.png", "", "bower_components/jquery-ui/themes/images/theme_90_ui_dark.png");
-		getCssReferences().add(new CSSReference("darknessTheme", 1.121, "bower_components/jquery-ui/themes/ui-darkness/theme.css",
-		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/ui-darkness/theme.css")
-				                       .setSpecifiedClassName(
-				"jquitheme"));
-		getCssReferences().add(new CSSReference("darknessTheme2", 1.121, "bower_components/jquery-ui/themes/ui-darkness/jquery-ui.css",
-		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/ui-darkness/jquery-ui.css").setSpecifiedClassName(
-				"jquitheme"));
+		getCssReferences().add(new CSSReference("darknessTheme", 1.121, "bower_components/jquery-ui/themes/ui-darkness/theme.min.css",
+		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/ui-darkness/theme.min.css").setSpecifiedClassName("jquitheme"));
+		getCssReferences().add(new CSSReference("darknessTheme2", 1.121, "bower_components/jquery-ui/themes/ui-darkness/jquery-ui.min.css",
+		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/ui-darkness/jquery-ui.min.css").setSpecifiedClassName("jquitheme"));
 	}
 
 }

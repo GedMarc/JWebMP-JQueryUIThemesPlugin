@@ -25,7 +25,8 @@ import com.jwebmp.htmlbuilder.css.themes.Theme;
  * @author MMagon
  * @since 2012/02/04
  */
-public class PepperGrinderTheme extends Theme
+public class PepperGrinderTheme
+		extends Theme
 {
 
 	private static final long serialVersionUID = 1L;
@@ -35,15 +36,13 @@ public class PepperGrinderTheme extends Theme
 	 */
 	public PepperGrinderTheme()
 	{
-		super("Pepper Grinder", "uipeppergrinder", "bower_components/jquery-ui/themes/images/theme_30_pepper_grinder.png", "", "bower_components/jquery-ui/themes/images/theme_90_pepper_grinder.png");
-		getCssReferences().add(new CSSReference("peppergrinderTheme", 1.121, "bower_components/jquery-ui/themes/pepper-grinder/theme.css",
-		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/pepper-grinder/theme.css")
-				                       .setSpecifiedClassName(
+		super("Pepper Grinder", "uipeppergrinder", "bower_components/jquery-ui/themes/images/theme_30_pepper_grinder.png", "",
+		      "bower_components/jquery-ui/themes/images/theme_90_pepper_grinder.png");
+		getCssReferences().add(new CSSReference("peppergrinderTheme", 1.121, "bower_components/jquery-ui/themes/pepper-grinder/theme.min.css",
+		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/pepper-grinder/theme.min.css").setSpecifiedClassName("jquitheme"));
+		getCssReferences().add(new CSSReference("peppergrinderTheme2", 1.121, "bower_components/jquery-ui/themes/pepper-grinder/jquery-ui.min.css",
+		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/pepper-grinder/jquery-ui.min.css").setSpecifiedClassName(
 				"jquitheme"));
-		getCssReferences().add(
-				new CSSReference("peppergrinderTheme2", 1.121, "bower_components/jquery-ui/themes/pepper-grinder/jquery-ui.css",
-				                 "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/pepper-grinder/jquery-ui.css").setSpecifiedClassName(
-						"jquitheme"));
 
 	}
 

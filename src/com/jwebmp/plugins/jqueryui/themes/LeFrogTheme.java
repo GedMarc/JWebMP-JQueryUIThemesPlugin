@@ -25,7 +25,8 @@ import com.jwebmp.htmlbuilder.css.themes.Theme;
  * @author MMagon
  * @since 2012/02/04
  */
-public class LeFrogTheme extends Theme
+public class LeFrogTheme
+		extends Theme
 {
 
 	private static final long serialVersionUID = 1L;
@@ -36,13 +37,10 @@ public class LeFrogTheme extends Theme
 	public LeFrogTheme()
 	{
 		super("LeFrog", "uilefrog", "bower_components/jquery-ui/themes/images/theme_30_le_frog.png", "", "bower_components/jquery-ui/themes/images/theme_90_le_frog.png");
-		getCssReferences().add(new CSSReference("lefrogTheme", 1.121, "bower_components/jquery-ui/themes/le-frog/theme.css",
-		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/le-frog/theme.css")
-				                       .setSpecifiedClassName(
-				"jquitheme"));
-		getCssReferences().add(new CSSReference("lefrogTheme2", 1.121, "bower_components/jquery-ui/themes/le-frog/jquery-ui.css",
-		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/le-frog/jquery-ui.css").setSpecifiedClassName(
-				"jquitheme"));
+		getCssReferences().add(new CSSReference("lefrogTheme", 1.121, "bower_components/jquery-ui/themes/le-frog/theme.min.css",
+		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/le-frog/theme.min.css").setSpecifiedClassName("jquitheme"));
+		getCssReferences().add(new CSSReference("lefrogTheme2", 1.121, "bower_components/jquery-ui/themes/le-frog/jquery-ui.min.css",
+		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/le-frog/jquery-ui.min.css").setSpecifiedClassName("jquitheme"));
 
 	}
 

@@ -26,7 +26,8 @@ import com.jwebmp.htmlbuilder.css.themes.Theme;
  * @version 1.0
  * @since 2014/07/05
  */
-public class TrontasticTheme extends Theme
+public class TrontasticTheme
+		extends Theme
 {
 
 	private static final long serialVersionUID = 1L;
@@ -36,14 +37,12 @@ public class TrontasticTheme extends Theme
 	 */
 	public TrontasticTheme()
 	{
-		super("Trontastic", "uitrontastic", "bower_components/jquery-ui/themes/images/theme_30_trontastic.png", "", "bower_components/jquery-ui/themes/images/theme_90_trontastic.png");
-		getCssReferences().add(new CSSReference("trontasticTheme", 1.121, "bower_components/jquery-ui/themes/trontastic/theme.css",
-		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/trontastic/theme.css")
-				                       .setSpecifiedClassName(
-				"jquitheme"));
-		getCssReferences().add(new CSSReference("trontasticTheme2", 1.121, "bower_components/jquery-ui/themes/trontastic/jquery-ui.css",
-		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/trontastic/jquery-ui.css").setSpecifiedClassName(
-				"jquitheme"));
+		super("Trontastic", "uitrontastic", "bower_components/jquery-ui/themes/images/theme_30_trontastic.png", "",
+		      "bower_components/jquery-ui/themes/images/theme_90_trontastic.png");
+		getCssReferences().add(new CSSReference("trontasticTheme", 1.121, "bower_components/jquery-ui/themes/trontastic/theme.min.css",
+		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/trontastic/theme.min.css").setSpecifiedClassName("jquitheme"));
+		getCssReferences().add(new CSSReference("trontasticTheme2", 1.121, "bower_components/jquery-ui/themes/trontastic/jquery-ui.min.css",
+		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/trontastic/jquery-ui.min.css").setSpecifiedClassName("jquitheme"));
 	}
 
 }

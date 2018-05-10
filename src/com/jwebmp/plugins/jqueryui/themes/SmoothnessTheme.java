@@ -26,21 +26,20 @@ import com.jwebmp.htmlbuilder.css.themes.Theme;
  * @version 1.0
  * @since 2014/07/05
  */
-class SmoothnessTheme extends Theme
+class SmoothnessTheme
+		extends Theme
 {
 
 	private static final long serialVersionUID = 1L;
 
 	public SmoothnessTheme()
 	{
-		super("Smoothness", "uismoothness", "bower_components/jquery-ui/themes/images/theme_30_smoothness.png", "", "bower_components/jquery-ui/themes/images/theme_90_smoothness.png");
-		getCssReferences().add(new CSSReference("smoothnessTheme", 1.121, "bower_components/jquery-ui/themes/smoothness/theme.css",
-		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/theme.css")
-				                       .setSpecifiedClassName(
-				"jquitheme"));
-		getCssReferences().add(new CSSReference("smoothnessTheme2", 1.121, "bower_components/jquery-ui/themes/smoothness/jquery-ui.css",
-		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css").setSpecifiedClassName(
-				"jquitheme"));
+		super("Smoothness", "uismoothness", "bower_components/jquery-ui/themes/images/theme_30_smoothness.png", "",
+		      "bower_components/jquery-ui/themes/images/theme_90_smoothness.png");
+		getCssReferences().add(new CSSReference("smoothnessTheme", 1.121, "bower_components/jquery-ui/themes/smoothness/theme.min.css",
+		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/theme.min.css").setSpecifiedClassName("jquitheme"));
+		getCssReferences().add(new CSSReference("smoothnessTheme2", 1.121, "bower_components/jquery-ui/themes/smoothness/jquery-ui.min.css",
+		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.min.css").setSpecifiedClassName("jquitheme"));
 	}
 
 }

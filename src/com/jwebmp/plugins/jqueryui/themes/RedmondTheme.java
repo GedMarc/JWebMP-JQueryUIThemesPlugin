@@ -25,7 +25,8 @@ import com.jwebmp.htmlbuilder.css.themes.Theme;
  * @author MMagon
  * @since 2012/02/04
  */
-public class RedmondTheme extends Theme
+public class RedmondTheme
+		extends Theme
 {
 
 	private static final long serialVersionUID = 1L;
@@ -36,13 +37,10 @@ public class RedmondTheme extends Theme
 	public RedmondTheme()
 	{
 		super("Redmond", "uiredmond", "bower_components/jquery-ui/themes/images/theme_30_redmond.png", "", "bower_components/jquery-ui/themes/images/theme_90_redmond.png");
-		getCssReferences().add(new CSSReference("redmondTheme", 1.121, "bower_components/jquery-ui/themes/redmond/theme.css",
-		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/redmond/theme.css")
-				                       .setSpecifiedClassName(
-				"jquitheme"));
-		getCssReferences().add(new CSSReference("redmondTheme2", 1.121, "bower_components/jquery-ui/themes/redmond/jquery-ui.css",
-		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/redmond/jquery-ui.css").setSpecifiedClassName(
-				"jquitheme"));
+		getCssReferences().add(new CSSReference("redmondTheme", 1.121, "bower_components/jquery-ui/themes/redmond/theme.min.css",
+		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/redmond/theme.min.css").setSpecifiedClassName("jquitheme"));
+		getCssReferences().add(new CSSReference("redmondTheme2", 1.121, "bower_components/jquery-ui/themes/redmond/jquery-ui.min.css",
+		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/redmond/jquery-ui.min.css").setSpecifiedClassName("jquitheme"));
 
 	}
 

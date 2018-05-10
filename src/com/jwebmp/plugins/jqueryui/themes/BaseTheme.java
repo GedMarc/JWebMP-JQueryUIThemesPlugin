@@ -35,10 +35,10 @@ public class BaseTheme
 	public BaseTheme()
 	{
 		super("BaseTheme");
-		getCssReferences().add(new CSSReference("BaseTheme", 1.121, "bower_components/jquery-ui/themes/base/theme.css",
-		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/base/theme.css").setSpecifiedClassName("jquitheme-core"));
-		getCssReferences().add(new CSSReference("BaseTheme2", 1.121, "bower_components/jquery-ui/themes/base/jquery-ui.css",
-		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.css").setSpecifiedClassName("jquitheme-core"));
+		getCssReferences().add(new CSSReference("BaseTheme", 1.121, "bower_components/jquery-ui/themes/base/theme.min.css",
+		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/base/theme.min.css").setSpecifiedClassName("jquitheme-core"));
+		getCssReferences().add(new CSSReference("BaseTheme2", 1.121, "bower_components/jquery-ui/themes/base/jquery-ui.min.css",
+		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css").setSpecifiedClassName("jquitheme-core"));
 
 	}
 

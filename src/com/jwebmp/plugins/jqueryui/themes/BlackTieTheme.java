@@ -26,7 +26,8 @@ import com.jwebmp.htmlbuilder.css.themes.Theme;
  * @version 1.0
  * @since 2014/07/05
  */
-public class BlackTieTheme extends Theme
+public class BlackTieTheme
+		extends Theme
 {
 
 	private static final long serialVersionUID = 1L;
@@ -34,13 +35,10 @@ public class BlackTieTheme extends Theme
 	public BlackTieTheme()
 	{
 		super("Black Tie");
-		getCssReferences().add(new CSSReference("BlackTieTheme2", 1.121, "bower_components/jquery-ui/themes/black-tie/theme.css",
-		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/black-tie/theme.css")
-				                       .setSpecifiedClassName(
-				"jquitheme"));
-		getCssReferences().add(new CSSReference("BlackTieTheme", 1.121, "bower_components/jquery-ui/themes/black-tie/jquery-ui.css",
-		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/black-tie/jquery-ui.css").setSpecifiedClassName(
-				"jquitheme"));
+		getCssReferences().add(new CSSReference("BlackTieTheme2", 1.121, "bower_components/jquery-ui/themes/black-tie/theme.min.css",
+		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/black-tie/theme.min.css").setSpecifiedClassName("jquitheme"));
+		getCssReferences().add(new CSSReference("BlackTieTheme", 1.121, "bower_components/jquery-ui/themes/black-tie/jquery-ui.min.css",
+		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/black-tie/jquery-ui.min.css").setSpecifiedClassName("jquitheme"));
 
 	}
 

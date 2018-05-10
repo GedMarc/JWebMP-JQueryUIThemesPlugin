@@ -26,7 +26,8 @@ import com.jwebmp.htmlbuilder.css.themes.Theme;
  * @version 1.0
  * @since 2014/07/05
  */
-public class ExciteBikeTheme extends Theme
+public class ExciteBikeTheme
+		extends Theme
 {
 
 	private static final long serialVersionUID = 1L;
@@ -36,14 +37,12 @@ public class ExciteBikeTheme extends Theme
 	 */
 	public ExciteBikeTheme()
 	{
-		super("Excite Bike", "uiexcitebike", "bower_components/jquery-ui/themes/images/theme_30_excite_bike.png", "", "bower_components/jquery-ui/themes/images/theme_90_excite_bike.png");
-		getCssReferences().add(new CSSReference("uiexcitebike", 1.121, "bower_components/jquery-ui/themes/excite-bike/theme.css",
-		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/excite-bike/theme.css")
-				                       .setSpecifiedClassName(
-				"jquitheme"));
-		getCssReferences().add(new CSSReference("uiexcitebike2", 1.121, "bower_components/jquery-ui/themes/excite-bike/jquery-ui.css",
-		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/excite-bike/jquery-ui.css").setSpecifiedClassName(
-				"jquitheme"));
+		super("Excite Bike", "uiexcitebike", "bower_components/jquery-ui/themes/images/theme_30_excite_bike.png", "",
+		      "bower_components/jquery-ui/themes/images/theme_90_excite_bike.png");
+		getCssReferences().add(new CSSReference("uiexcitebike", 1.121, "bower_components/jquery-ui/themes/excite-bike/theme.min.css",
+		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/excite-bike/theme.min.css").setSpecifiedClassName("jquitheme"));
+		getCssReferences().add(new CSSReference("uiexcitebike2", 1.121, "bower_components/jquery-ui/themes/excite-bike/jquery-ui.min.css",
+		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/excite-bike/jquery-ui.min.css").setSpecifiedClassName("jquitheme"));
 	}
 
 }

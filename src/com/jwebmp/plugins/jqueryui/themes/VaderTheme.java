@@ -26,7 +26,8 @@ import com.jwebmp.htmlbuilder.css.themes.Theme;
  * @version 1.0
  * @since 2014/07/05
  */
-public class VaderTheme extends Theme
+public class VaderTheme
+		extends Theme
 {
 
 	private static final long serialVersionUID = 1L;
@@ -37,13 +38,10 @@ public class VaderTheme extends Theme
 	public VaderTheme()
 	{
 		super("Vader", "uivader", "bower_components/jquery-ui/themes/images/theme_30_vader.png", "", "bower_components/jquery-ui/themes/images/theme_90_vader.png");
-		getCssReferences().add(new CSSReference("vaderTheme", 1.121, "bower_components/jquery-ui/themes/vader/theme.css",
-		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/vader/theme.css")
-				                       .setSpecifiedClassName(
-				"jquitheme"));
-		getCssReferences().add(new CSSReference("vaderTheme2", 1.121, "bower_components/jquery-ui/themes/vader/jquery-ui.css",
-		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/vader/jquery-ui.css").setSpecifiedClassName(
-				"jquitheme"));
+		getCssReferences().add(new CSSReference("vaderTheme", 1.121, "bower_components/jquery-ui/themes/vader/theme.min.css",
+		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/vader/theme.min.css").setSpecifiedClassName("jquitheme"));
+		getCssReferences().add(new CSSReference("vaderTheme2", 1.121, "bower_components/jquery-ui/themes/vader/jquery-ui.min.css",
+		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/vader/jquery-ui.min.css").setSpecifiedClassName("jquitheme"));
 	}
 
 }

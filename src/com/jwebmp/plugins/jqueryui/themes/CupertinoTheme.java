@@ -26,7 +26,8 @@ import com.jwebmp.htmlbuilder.css.themes.Theme;
  * @version 1.0
  * @since 2014/07/05
  */
-public class CupertinoTheme extends Theme
+public class CupertinoTheme
+		extends Theme
 {
 
 	private static final long serialVersionUID = 1L;
@@ -37,13 +38,10 @@ public class CupertinoTheme extends Theme
 	public CupertinoTheme()
 	{
 		super("Cupertino", "uicupertino", "bower_components/jquery-ui/themes/images/theme_30_cupertino.png", "", "bower_components/jquery-ui/themes/images/theme_90_cupertino.png");
-		getCssReferences().add(new CSSReference("CupertinoTheme", 1.121, "bower_components/jquery-ui/themes/cupertino/theme.css",
-		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/cupertino/jtheme.css")
-				                       .setSpecifiedClassName(
-				"jquitheme"));
-		getCssReferences().add(new CSSReference("CupertinoTheme", 1.121, "bower_components/jquery-ui/themes/cupertino/jquery-ui.css",
-		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/cupertino/jquery-ui.css").setSpecifiedClassName(
-				"jquitheme"));
+		getCssReferences().add(new CSSReference("CupertinoTheme", 1.121, "bower_components/jquery-ui/themes/cupertino/theme.min.css",
+		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/cupertino/jtheme.min.css").setSpecifiedClassName("jquitheme"));
+		getCssReferences().add(new CSSReference("CupertinoTheme", 1.121, "bower_components/jquery-ui/themes/cupertino/jquery-ui.min.css",
+		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/cupertino/jquery-ui.min.css").setSpecifiedClassName("jquitheme"));
 	}
 
 }
