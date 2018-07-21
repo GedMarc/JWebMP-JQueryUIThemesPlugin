@@ -16,9 +16,9 @@
  */
 package com.jwebmp.plugins.jqueryui.nestablethemes;
 
-import com.jwebmp.Page;
-import com.jwebmp.PageConfigurator;
-import com.jwebmp.plugins.PluginInformation;
+import com.jwebmp.core.Page;
+import com.jwebmp.core.PageConfigurator;
+import com.jwebmp.core.plugins.PluginInformation;
 
 import javax.validation.constraints.NotNull;
 
@@ -184,7 +184,7 @@ public class JQUIThemesPageConfigurator
 
 	private static final long serialVersionUID = 1L;
 
-	private static JQUIThemes theme = JQUIThemes.Base;
+	private static com.jwebmp.plugins.jqueryui.nestablethemes.JQUIThemes theme = com.jwebmp.plugins.jqueryui.nestablethemes.JQUIThemes.Base;
 
 	public JQUIThemesPageConfigurator()
 	{
@@ -197,7 +197,7 @@ public class JQUIThemesPageConfigurator
 	 * @return
 	 */
 	@NotNull
-	public static JQUIThemes getTheme()
+	public static com.jwebmp.plugins.jqueryui.nestablethemes.JQUIThemes getTheme()
 	{
 		return theme;
 	}
@@ -207,7 +207,7 @@ public class JQUIThemesPageConfigurator
 	 *
 	 * @param theme
 	 */
-	public static void setTheme(@NotNull JQUIThemes theme)
+	public static void setTheme(@NotNull com.jwebmp.plugins.jqueryui.nestablethemes.JQUIThemes theme)
 	{
 		JQUIThemesPageConfigurator.theme = theme;
 	}

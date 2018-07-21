@@ -16,8 +16,8 @@
  */
 package com.jwebmp.plugins.jqueryui.nestablethemes;
 
-import com.jwebmp.base.references.CSSReference;
-import com.jwebmp.htmlbuilder.css.themes.Theme;
+import com.jwebmp.core.base.references.CSSReference;
+import com.jwebmp.core.htmlbuilder.css.themes.Theme;
 
 /**
  * The Dark Hive theme to JQuery UI
