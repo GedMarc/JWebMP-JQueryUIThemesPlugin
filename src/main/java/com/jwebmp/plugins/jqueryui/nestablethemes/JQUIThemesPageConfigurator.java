@@ -17,8 +17,8 @@
 package com.jwebmp.plugins.jqueryui.nestablethemes;
 
 import com.jwebmp.core.Page;
-import com.jwebmp.core.PageConfigurator;
 import com.jwebmp.core.plugins.PluginInformation;
+import com.jwebmp.core.services.IPageConfigurator;
 
 import javax.validation.constraints.NotNull;
 
@@ -28,144 +28,7 @@ import javax.validation.constraints.NotNull;
  */
 @PluginInformation(pluginName = "JQuery UI Themes",
 		pluginUniqueName = "jquery-ui-themes",
-		pluginDescription = "ThemeRoller allows you " +
-		                    "to" +
-		                    " design " +
-		                    "custom " +
-		                    "jQuery" +
-		                    " UI " +
-		                    "themes " +
-		                    "for " +
-		                    "tight " +
-		                    "integration in " +
-		                    "your projects. To " +
-		                    "" +
-		                    "" +
-		                    "" +
-		                    "" +
-		                    "" +
-		                    "" +
-		                    "" +
-		                    "" +
-		                    "" +
-		                    "" +
-		                    "" +
-		                    "" +
-		                    "" +
-		                    "" +
-		                    "" +
-		                    "" +
-		                    "" +
-		                    "" +
-		                    "" +
-		                    "create " +
-		                    "a" +
-		                    "" +
-		                    " " +
-		                    "custom " +
-		                    "" +
-		                    "" +
-		                    "" +
-		                    "" +
-		                    "" +
-		                    "" +
-		                    "" +
-		                    "theme," +
-		                    "" +
-		                    "" +
-		                    "" +
-		                    "" +
-		                    "" +
-		                    " " +
-		                    "" +
-		                    "" +
-		                    "select" +
-		                    " " +
-		                    "the " +
-		                    "Roll " +
-		                    "your " +
-		                    "own" +
-		                    "" +
-		                    " " +
-		                    "tab " +
-		                    "" +
-		                    "" +
-		                    "" +
-		                    "" +
-		                    "" +
-		                    "and" +
-		                    "" +
-		                    "" +
-		                    "" +
-		                    " " +
-		                    "tweak " +
-		                    "the" +
-		                    " " +
-		                    "settings. " +
-		                    "As" +
-		                    " " +
-		                    "" +
-		                    "you " +
-		                    "work, " +
-		                    "the " +
-		                    "UI " +
-		                    "" +
-		                    "components to" +
-		                    "" +
-		                    " the " +
-		                    "" +
-		                    "" +
-		                    "right " +
-		                    "will " +
-		                    "update " +
-		                    "to " +
-		                    "reflect " +
-		                    "" +
-		                    "" +
-		                    "" +
-		                    "" +
-		                    "" +
-		                    "" +
-		                    "" +
-		                    "" +
-		                    "" +
-		                    "" +
-		                    "" +
-		                    "" +
-		                    "" +
-		                    "" +
-		                    "" +
-		                    "your " +
-		                    "design " +
-		                    "and " +
-		                    "you " +
-		                    "can" +
-		                    " " +
-		                    "download " +
-		                    "" +
-		                    "" +
-		                    "your " +
-		                    "theme " +
-		                    "whenever you" +
-		                    " " +
-		                    "" +
-		                    "" +
-		                    "" +
-		                    "" +
-		                    "" +
-		                    "" +
-		                    "" +
-		                    "" +
-		                    "" +
-		                    "" +
-		                    "" +
-		                    "" +
-		                    "" +
-		                    "" +
-		                    "" +
-		                    "" +
-		                    "" +
-		                    "like.",
+		pluginDescription = "A set of prebuilt themes from the theme roller set for jquery ui",
 		pluginVersion = "1.12.1",
 		pluginDependancyUniqueIDs = "jquery-ui",
 		pluginCategories = "jquery, ui, jquery-ui",
@@ -179,7 +42,7 @@ import javax.validation.constraints.NotNull;
 		pluginIconImageUrl = "bower_components/jquery-ui/themes/themeroller_example.jpg",
 		pluginLastUpdatedDate = "2017/03/04")
 public class JQUIThemesPageConfigurator
-		extends PageConfigurator
+		implements IPageConfigurator
 {
 
 	private static final long serialVersionUID = 1L;
