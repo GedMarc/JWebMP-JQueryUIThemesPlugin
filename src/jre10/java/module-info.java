@@ -13,5 +13,5 @@ module com.jwebmp.plugins.jqueryui.nestablethemes {
 	requires java.logging;
 
 	provides IPageConfigurator with JQUIThemesPageConfigurator;
-
+	opens com.jwebmp.plugins.jqueryui.nestablethemes to com.fasterxml.jackson.databind,com.jwebmp.core;
 }
