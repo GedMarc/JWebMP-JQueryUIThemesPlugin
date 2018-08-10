@@ -75,6 +75,7 @@ public class JQUIThemesPageConfigurator
 		JQUIThemesPageConfigurator.theme = theme;
 	}
 
+	@NotNull
 	@Override
 	public Page configure(Page page)
 	{
