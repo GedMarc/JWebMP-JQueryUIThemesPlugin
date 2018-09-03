@@ -44,14 +44,41 @@ import javax.validation.constraints.NotNull;
 public class JQUIThemesPageConfigurator
 		implements IPageConfigurator
 {
-
 	private static final long serialVersionUID = 1L;
-
+	/**
+	 * If this configurator is enabled
+	 */
+	private static boolean enabled = true;
 	private static com.jwebmp.plugins.jqueryui.nestablethemes.JQUIThemes theme = com.jwebmp.plugins.jqueryui.nestablethemes.JQUIThemes.Base;
 
 	public JQUIThemesPageConfigurator()
 	{
 		//Nothing Needed
+	}
+
+	/**
+	 * Method isEnabled returns the enabled of this AngularAnimatedChangePageConfigurator object.
+	 * <p>
+	 * If this configurator is enabled
+	 *
+	 * @return the enabled (type boolean) of this AngularAnimatedChangePageConfigurator object.
+	 */
+	public static boolean isEnabled()
+	{
+		return JQUIThemesPageConfigurator.enabled;
+	}
+
+	/**
+	 * Method setEnabled sets the enabled of this AngularAnimatedChangePageConfigurator object.
+	 * <p>
+	 * If this configurator is enabled
+	 *
+	 * @param mustEnable
+	 * 		the enabled of this AngularAnimatedChangePageConfigurator object.
+	 */
+	public static void setEnabled(boolean mustEnable)
+	{
+		JQUIThemesPageConfigurator.enabled = mustEnable;
 	}
 
 	/**
@@ -62,7 +89,7 @@ public class JQUIThemesPageConfigurator
 	@NotNull
 	public static com.jwebmp.plugins.jqueryui.nestablethemes.JQUIThemes getTheme()
 	{
-		return theme;
+		return JQUIThemesPageConfigurator.theme;
 	}
 
 	/**
@@ -81,11 +108,17 @@ public class JQUIThemesPageConfigurator
 	{
 		if (!page.isConfigured())
 		{
-			theme.getTheme()
-			     .getCssReferences()
-			     .forEach(a -> page.getBody()
-			                       .addCssReference(a));
+			JQUIThemesPageConfigurator.theme.getTheme()
+			                                .getCssReferences()
+			                                .forEach(a -> page.getBody()
+			                                                  .addCssReference(a));
 		}
 		return page;
+	}
+
+	@Override
+	public boolean enabled()
+	{
+		return JQUIThemesPageConfigurator.enabled;
 	}
 }
