@@ -42,7 +42,7 @@ import javax.validation.constraints.NotNull;
 		pluginIconImageUrl = "bower_components/jquery-ui/themes/themeroller_example.jpg",
 		pluginLastUpdatedDate = "2017/03/04")
 public class JQUIThemesPageConfigurator
-		implements IPageConfigurator
+		implements IPageConfigurator<JQUIThemesPageConfigurator>
 {
 	private static final long serialVersionUID = 1L;
 	/**
