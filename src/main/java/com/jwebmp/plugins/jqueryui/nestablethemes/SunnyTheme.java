@@ -30,7 +30,6 @@ public class SunnyTheme
 		extends Theme
 {
 
-	private static final long serialVersionUID = 1L;
 
 	/**
 	 * A sunny theme

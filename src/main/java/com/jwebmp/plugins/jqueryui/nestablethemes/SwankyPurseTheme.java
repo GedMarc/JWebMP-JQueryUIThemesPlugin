@@ -30,7 +30,6 @@ public class SwankyPurseTheme
 		extends Theme
 {
 
-	private static final long serialVersionUID = 1L;
 
 	/**
 	 * The purple swanky purse theme

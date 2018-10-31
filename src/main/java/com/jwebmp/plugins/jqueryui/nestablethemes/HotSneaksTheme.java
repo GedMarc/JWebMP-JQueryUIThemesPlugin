@@ -30,7 +30,6 @@ public class HotSneaksTheme
 		extends Theme
 {
 
-	private static final long serialVersionUID = 1L;
 
 	/**
 	 * New hot sneaks theme

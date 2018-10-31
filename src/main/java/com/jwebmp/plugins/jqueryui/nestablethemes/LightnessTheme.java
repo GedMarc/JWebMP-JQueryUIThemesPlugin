@@ -30,7 +30,6 @@ public class LightnessTheme
 		extends Theme
 {
 
-	private static final long serialVersionUID = 1L;
 
 	/**
 	 * A new lightness theme

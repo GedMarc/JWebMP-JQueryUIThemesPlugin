@@ -44,7 +44,7 @@ import javax.validation.constraints.NotNull;
 public class JQUIThemesPageConfigurator
 		implements IPageConfigurator<JQUIThemesPageConfigurator>
 {
-	private static final long serialVersionUID = 1L;
+
 	/**
 	 * If this configurator is enabled
 	 */

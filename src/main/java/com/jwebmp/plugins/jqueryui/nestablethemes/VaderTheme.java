@@ -30,7 +30,6 @@ public class VaderTheme
 		extends Theme
 {
 
-	private static final long serialVersionUID = 1L;
 
 	/**
 	 * The vader theme

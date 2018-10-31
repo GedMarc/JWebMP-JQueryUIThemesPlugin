@@ -30,7 +30,6 @@ public class EggplantTheme
 		extends Theme
 {
 
-	private static final long serialVersionUID = 1L;
 
 	public EggplantTheme()
 	{

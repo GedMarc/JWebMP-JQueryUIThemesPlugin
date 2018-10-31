@@ -29,7 +29,6 @@ public class FlickTheme
 		extends Theme
 {
 
-	private static final long serialVersionUID = 1L;
 
 	/**
 	 * Constructs a new global flick theme

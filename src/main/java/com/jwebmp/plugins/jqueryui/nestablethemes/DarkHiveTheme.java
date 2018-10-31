@@ -29,7 +29,6 @@ public class DarkHiveTheme
 		extends Theme
 {
 
-	private static final long serialVersionUID = 1L;
 
 	public DarkHiveTheme()
 	{

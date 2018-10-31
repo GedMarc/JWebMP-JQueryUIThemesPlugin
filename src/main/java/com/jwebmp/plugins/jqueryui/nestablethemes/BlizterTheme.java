@@ -30,7 +30,6 @@ public class BlizterTheme
 		extends Theme
 {
 
-	private static final long serialVersionUID = 1L;
 
 	/**
 	 * Constructs a new instance of the blitzer theme

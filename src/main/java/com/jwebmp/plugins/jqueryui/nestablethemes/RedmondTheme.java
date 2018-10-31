@@ -29,7 +29,6 @@ public class RedmondTheme
 		extends Theme
 {
 
-	private static final long serialVersionUID = 1L;
 
 	/**
 	 * A global redmond theme

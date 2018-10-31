@@ -29,7 +29,6 @@ public class PepperGrinderTheme
 		extends Theme
 {
 
-	private static final long serialVersionUID = 1L;
 
 	/**
 	 * The pepper grinder theme

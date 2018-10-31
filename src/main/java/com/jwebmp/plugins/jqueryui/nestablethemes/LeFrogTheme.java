@@ -29,7 +29,6 @@ public class LeFrogTheme
 		extends Theme
 {
 
-	private static final long serialVersionUID = 1L;
 
 	/**
 	 * The LeFrog Theme

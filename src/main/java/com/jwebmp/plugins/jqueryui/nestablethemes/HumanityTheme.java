@@ -30,7 +30,6 @@ public class HumanityTheme
 		extends Theme
 {
 
-	private static final long serialVersionUID = 1L;
 
 	/**
 	 * The humanity theme

@@ -30,7 +30,6 @@ public class StartTheme
 		extends Theme
 {
 
-	private static final long serialVersionUID = 1L;
 
 	/**
 	 * A new start theme

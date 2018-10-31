@@ -30,7 +30,6 @@ class SmoothnessTheme
 		extends Theme
 {
 
-	private static final long serialVersionUID = 1L;
 
 	public SmoothnessTheme()
 	{

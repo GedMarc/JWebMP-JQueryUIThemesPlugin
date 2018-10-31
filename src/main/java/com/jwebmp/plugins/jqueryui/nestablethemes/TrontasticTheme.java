@@ -30,7 +30,6 @@ public class TrontasticTheme
 		extends Theme
 {
 
-	private static final long serialVersionUID = 1L;
 
 	/**
 	 * The trontastic theme

@@ -30,7 +30,6 @@ public class SouthStreetTheme
 		extends Theme
 {
 
-	private static final long serialVersionUID = 1L;
 
 	/**
 	 *
