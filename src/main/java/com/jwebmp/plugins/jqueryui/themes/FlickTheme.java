@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package com.jwebmp.plugins.jqueryui.nestablethemes;
+package com.jwebmp.plugins.jqueryui.themes;
 
 import com.jwebmp.core.base.references.CSSReference;
 import com.jwebmp.core.htmlbuilder.css.themes.Theme;
@@ -25,21 +25,21 @@ import com.jwebmp.core.htmlbuilder.css.themes.Theme;
  * @author MMagon
  * @since 2012/02/04
  */
-public class LeFrogTheme
+public class FlickTheme
 		extends Theme
 {
 
 
 	/**
-	 * The LeFrog Theme
+	 * Constructs a new global flick theme
 	 */
-	public LeFrogTheme()
+	public FlickTheme()
 	{
-		super("LeFrog", "uilefrog", "bower_components/jquery-ui/themes/images/theme_30_le_frog.png", "", "bower_components/jquery-ui/themes/images/theme_90_le_frog.png");
-		getCssReferences().add(new CSSReference("lefrogTheme", 1.121, "bower_components/jquery-ui/themes/le-frog/theme.min.css",
-		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/le-frog/theme.min.css").setSpecifiedClassName("jquitheme"));
-		getCssReferences().add(new CSSReference("lefrogTheme2", 1.121, "bower_components/jquery-ui/themes/le-frog/jquery-ui.min.css",
-		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/le-frog/jquery-ui.min.css").setSpecifiedClassName("jquitheme"));
+		super("Flick", "uiflick", "bower_components/jquery-ui/themes/images/theme_30_flick.png", "", "bower_components/jquery-ui/themes/images/theme_90_flick.png");
+		getCssReferences().add(new CSSReference("flickTheme", 1.121, "bower_components/jquery-ui/themes/flick/theme.min.css",
+		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/flick/theme.min.css").setSpecifiedClassName("jquitheme"));
+		getCssReferences().add(new CSSReference("flickTheme2", 1.121, "bower_components/jquery-ui/themes/flick/jquery-ui.min.css",
+		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/flick/jquery-ui.min.css").setSpecifiedClassName("jquitheme"));
 
 	}
 

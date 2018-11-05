@@ -18,7 +18,6 @@
 package com.jwebmp.plugins.jqueryui.themes;
 
 import com.jwebmp.core.Page;
-import com.jwebmp.plugins.jqueryui.nestablethemes.BaseTheme;
 import org.junit.jupiter.api.Test;
 
 class JQUIThemesPageConfiguratorTest

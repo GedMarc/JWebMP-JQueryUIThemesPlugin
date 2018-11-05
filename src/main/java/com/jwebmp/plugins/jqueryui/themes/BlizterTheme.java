@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package com.jwebmp.plugins.jqueryui.nestablethemes;
+package com.jwebmp.plugins.jqueryui.themes;
 
 import com.jwebmp.core.base.references.CSSReference;
 import com.jwebmp.core.htmlbuilder.css.themes.Theme;
@@ -26,21 +26,22 @@ import com.jwebmp.core.htmlbuilder.css.themes.Theme;
  * @version 1.0
  * @since 2014/07/05
  */
-public class DarknessTheme
+public class BlizterTheme
 		extends Theme
 {
 
 
 	/**
-	 * Constructs a new instance of the darkness theme
+	 * Constructs a new instance of the blitzer theme
 	 */
-	public DarknessTheme()
+	public BlizterTheme()
 	{
-		super("UI-Darkness", "uidarkness", "bower_components/jquery-ui/themes/images/theme_30_ui_dark.png", "", "bower_components/jquery-ui/themes/images/theme_90_ui_dark.png");
-		getCssReferences().add(new CSSReference("darknessTheme", 1.121, "bower_components/jquery-ui/themes/ui-darkness/theme.min.css",
-		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/ui-darkness/theme.min.css").setSpecifiedClassName("jquitheme"));
-		getCssReferences().add(new CSSReference("darknessTheme2", 1.121, "bower_components/jquery-ui/themes/ui-darkness/jquery-ui.min.css",
-		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/ui-darkness/jquery-ui.min.css").setSpecifiedClassName("jquitheme"));
+		super("Blitzer", "uiblitzer", "bower_components/jquery-ui/themes/images/theme_30_blitzer.png", "", "bower_components/jquery-ui/themes/images/theme_90_blitzer.png");
+		getCssReferences().add(new CSSReference("BlitzerTheme2", 1.121, "bower_components/jquery-ui/themes/blizter/theme.min.css",
+		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/blitzer/theme.min.css").setSpecifiedClassName("jquitheme"));
+		getCssReferences().add(new CSSReference("BlitzerTheme", 1.121, "bower_components/jquery-ui/themes/blizter/jquery-ui.min.css",
+		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/blitzer/jquery-ui.min.css").setSpecifiedClassName("jquitheme"));
+
 	}
 
 }

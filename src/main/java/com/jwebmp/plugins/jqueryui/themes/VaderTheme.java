@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package com.jwebmp.plugins.jqueryui.nestablethemes;
+package com.jwebmp.plugins.jqueryui.themes;
 
 import com.jwebmp.core.base.references.CSSReference;
 import com.jwebmp.core.htmlbuilder.css.themes.Theme;
@@ -26,22 +26,21 @@ import com.jwebmp.core.htmlbuilder.css.themes.Theme;
  * @version 1.0
  * @since 2014/07/05
  */
-public class HotSneaksTheme
+public class VaderTheme
 		extends Theme
 {
 
 
 	/**
-	 * New hot sneaks theme
+	 * The vader theme
 	 */
-	public HotSneaksTheme()
+	public VaderTheme()
 	{
-		super("Hot Sneaks", "uihotsneaks", "bower_components/jquery-ui/themes/images/theme_30_hot_sneaks.png", "",
-		      "bower_components/jquery-ui/themes/images/theme_90_hot_sneaks.png");
-		getCssReferences().add(new CSSReference("hotsneaksTheme", 1.121, "bower_components/jquery-ui/themes/hot-sneaks/theme.min.css",
-		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/hot-sneaks/theme.min.css").setSpecifiedClassName("jquitheme"));
-		getCssReferences().add(new CSSReference("hotsneaksTheme2", 1.121, "bower_components/jquery-ui/themes/hot-sneaks/jquery-ui.min.css",
-		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/hot-sneaks/jquery-ui.min.css").setSpecifiedClassName("jquitheme"));
+		super("Vader", "uivader", "bower_components/jquery-ui/themes/images/theme_30_vader.png", "", "bower_components/jquery-ui/themes/images/theme_90_vader.png");
+		getCssReferences().add(new CSSReference("vaderTheme", 1.121, "bower_components/jquery-ui/themes/vader/theme.min.css",
+		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/vader/theme.min.css").setSpecifiedClassName("jquitheme"));
+		getCssReferences().add(new CSSReference("vaderTheme2", 1.121, "bower_components/jquery-ui/themes/vader/jquery-ui.min.css",
+		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/vader/jquery-ui.min.css").setSpecifiedClassName("jquitheme"));
 	}
 
 }

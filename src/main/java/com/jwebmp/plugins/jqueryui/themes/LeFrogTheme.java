@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package com.jwebmp.plugins.jqueryui.nestablethemes;
+package com.jwebmp.plugins.jqueryui.themes;
 
 import com.jwebmp.core.base.references.CSSReference;
 import com.jwebmp.core.htmlbuilder.css.themes.Theme;
@@ -25,21 +25,21 @@ import com.jwebmp.core.htmlbuilder.css.themes.Theme;
  * @author MMagon
  * @since 2012/02/04
  */
-public class RedmondTheme
+public class LeFrogTheme
 		extends Theme
 {
 
 
 	/**
-	 * A global redmond theme
+	 * The LeFrog Theme
 	 */
-	public RedmondTheme()
+	public LeFrogTheme()
 	{
-		super("Redmond", "uiredmond", "bower_components/jquery-ui/themes/images/theme_30_redmond.png", "", "bower_components/jquery-ui/themes/images/theme_90_redmond.png");
-		getCssReferences().add(new CSSReference("redmondTheme", 1.121, "bower_components/jquery-ui/themes/redmond/theme.min.css",
-		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/redmond/theme.min.css").setSpecifiedClassName("jquitheme"));
-		getCssReferences().add(new CSSReference("redmondTheme2", 1.121, "bower_components/jquery-ui/themes/redmond/jquery-ui.min.css",
-		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/redmond/jquery-ui.min.css").setSpecifiedClassName("jquitheme"));
+		super("LeFrog", "uilefrog", "bower_components/jquery-ui/themes/images/theme_30_le_frog.png", "", "bower_components/jquery-ui/themes/images/theme_90_le_frog.png");
+		getCssReferences().add(new CSSReference("lefrogTheme", 1.121, "bower_components/jquery-ui/themes/le-frog/theme.min.css",
+		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/le-frog/theme.min.css").setSpecifiedClassName("jquitheme"));
+		getCssReferences().add(new CSSReference("lefrogTheme2", 1.121, "bower_components/jquery-ui/themes/le-frog/jquery-ui.min.css",
+		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/le-frog/jquery-ui.min.css").setSpecifiedClassName("jquitheme"));
 
 	}
 

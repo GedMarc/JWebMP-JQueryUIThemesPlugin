@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package com.jwebmp.plugins.jqueryui.nestablethemes;
+package com.jwebmp.plugins.jqueryui.themes;
 
 import com.jwebmp.core.base.references.CSSReference;
 import com.jwebmp.core.htmlbuilder.css.themes.Theme;
@@ -26,19 +26,21 @@ import com.jwebmp.core.htmlbuilder.css.themes.Theme;
  * @version 1.0
  * @since 2014/07/05
  */
-public class BaseTheme
+public class OvercastTheme
 		extends Theme
 {
 
 
-	public BaseTheme()
+	/**
+	 * A global overcast theme
+	 */
+	public OvercastTheme()
 	{
-		super("BaseTheme");
-		getCssReferences().add(new CSSReference("BaseTheme", 1.121, "bower_components/jquery-ui/themes/base/theme.min.css",
-		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/base/theme.min.css").setSpecifiedClassName("jquitheme-core"));
-		getCssReferences().add(new CSSReference("BaseTheme2", 1.121, "bower_components/jquery-ui/themes/base/jquery-ui.min.css",
-		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css").setSpecifiedClassName("jquitheme-core"));
-
+		super("Overcast", "uiovercast", "bower_components/jquery-ui/themes/images/theme_30_overcast.png", "", "bower_components/jquery-ui/themes/images/theme_90_overcast.png");
+		getCssReferences().add(new CSSReference("overcastTheme", 1.121, "bower_components/jquery-ui/themes/overcast/theme.min.css",
+		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/overcast/theme.min.css").setSpecifiedClassName("jquitheme"));
+		getCssReferences().add(new CSSReference("overcastTheme2", 1.121, "bower_components/jquery-ui/themes/overcast/jquery-ui.min.css",
+		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/overcast/jquery-ui.min.css").setSpecifiedClassName("jquitheme"));
 	}
 
 }

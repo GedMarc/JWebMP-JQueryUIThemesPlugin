@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package com.jwebmp.plugins.jqueryui.nestablethemes;
+package com.jwebmp.plugins.jqueryui.themes;
 
 import com.jwebmp.core.base.references.CSSReference;
 import com.jwebmp.core.htmlbuilder.css.themes.Theme;
@@ -26,21 +26,21 @@ import com.jwebmp.core.htmlbuilder.css.themes.Theme;
  * @version 1.0
  * @since 2014/07/05
  */
-public class CupertinoTheme
+public class HumanityTheme
 		extends Theme
 {
 
 
 	/**
-	 * Constructs a new instance of the cupertino theme
+	 * The humanity theme
 	 */
-	public CupertinoTheme()
+	public HumanityTheme()
 	{
-		super("Cupertino", "uicupertino", "bower_components/jquery-ui/themes/images/theme_30_cupertino.png", "", "bower_components/jquery-ui/themes/images/theme_90_cupertino.png");
-		getCssReferences().add(new CSSReference("CupertinoTheme", 1.121, "bower_components/jquery-ui/themes/cupertino/theme.min.css",
-		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/cupertino/jtheme.min.css").setSpecifiedClassName("jquitheme"));
-		getCssReferences().add(new CSSReference("CupertinoTheme", 1.121, "bower_components/jquery-ui/themes/cupertino/jquery-ui.min.css",
-		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/cupertino/jquery-ui.min.css").setSpecifiedClassName("jquitheme"));
+		super("Humanity", "uihumanity", "bower_components/jquery-ui/themes/images/theme_30_humanity.png", "", "bower_components/jquery-ui/themes/images/theme_90_humanity.png");
+		getCssReferences().add(new CSSReference("humanityTheme", 1.121, "bower_components/jquery-ui/themes/humanity/theme.min.css",
+		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/humanity/theme.min.css").setSpecifiedClassName("jquitheme"));
+		getCssReferences().add(new CSSReference("humanityTheme2", 1.121, "bower_components/jquery-ui/themes/humanity/jquery-ui.min.css",
+		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/humanity/jquery-ui.min.css").setSpecifiedClassName("jquitheme"));
 	}
 
 }

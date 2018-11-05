@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package com.jwebmp.plugins.jqueryui.nestablethemes;
+package com.jwebmp.plugins.jqueryui.themes;
 
 import com.jwebmp.core.base.references.CSSReference;
 import com.jwebmp.core.htmlbuilder.css.themes.Theme;
@@ -26,18 +26,22 @@ import com.jwebmp.core.htmlbuilder.css.themes.Theme;
  * @version 1.0
  * @since 2014/07/05
  */
-public class EggplantTheme
+public class HotSneaksTheme
 		extends Theme
 {
 
 
-	public EggplantTheme()
+	/**
+	 * New hot sneaks theme
+	 */
+	public HotSneaksTheme()
 	{
-		super("Eggplant", "uieggplant", "bower_components/jquery-ui/themes/images/theme_30_eggplant.png", "", "bower_components/jquery-ui/themes/images/theme_90_eggplant.png");
-		getCssReferences().add(new CSSReference("eggplantTheme", 1.114, "bower_components/jquery-ui/themes/eggplant/theme.min.css",
-		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/eggplant/theme.min.css").setSpecifiedClassName("jquitheme"));
-		getCssReferences().add(new CSSReference("eggplantTheme1", 1.114, "bower_components/jquery-ui/themes/eggplant/jquery-ui.min.css",
-		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/eggplant/jquery-ui.min.css").setSpecifiedClassName("jquitheme"));
+		super("Hot Sneaks", "uihotsneaks", "bower_components/jquery-ui/themes/images/theme_30_hot_sneaks.png", "",
+		      "bower_components/jquery-ui/themes/images/theme_90_hot_sneaks.png");
+		getCssReferences().add(new CSSReference("hotsneaksTheme", 1.121, "bower_components/jquery-ui/themes/hot-sneaks/theme.min.css",
+		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/hot-sneaks/theme.min.css").setSpecifiedClassName("jquitheme"));
+		getCssReferences().add(new CSSReference("hotsneaksTheme2", 1.121, "bower_components/jquery-ui/themes/hot-sneaks/jquery-ui.min.css",
+		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/hot-sneaks/jquery-ui.min.css").setSpecifiedClassName("jquitheme"));
 	}
 
 }

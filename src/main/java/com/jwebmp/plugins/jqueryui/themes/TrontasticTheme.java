@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package com.jwebmp.plugins.jqueryui.nestablethemes;
+package com.jwebmp.plugins.jqueryui.themes;
 
 import com.jwebmp.core.base.references.CSSReference;
 import com.jwebmp.core.htmlbuilder.css.themes.Theme;
@@ -26,21 +26,22 @@ import com.jwebmp.core.htmlbuilder.css.themes.Theme;
  * @version 1.0
  * @since 2014/07/05
  */
-public class HumanityTheme
+public class TrontasticTheme
 		extends Theme
 {
 
 
 	/**
-	 * The humanity theme
+	 * The trontastic theme
 	 */
-	public HumanityTheme()
+	public TrontasticTheme()
 	{
-		super("Humanity", "uihumanity", "bower_components/jquery-ui/themes/images/theme_30_humanity.png", "", "bower_components/jquery-ui/themes/images/theme_90_humanity.png");
-		getCssReferences().add(new CSSReference("humanityTheme", 1.121, "bower_components/jquery-ui/themes/humanity/theme.min.css",
-		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/humanity/theme.min.css").setSpecifiedClassName("jquitheme"));
-		getCssReferences().add(new CSSReference("humanityTheme2", 1.121, "bower_components/jquery-ui/themes/humanity/jquery-ui.min.css",
-		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/humanity/jquery-ui.min.css").setSpecifiedClassName("jquitheme"));
+		super("Trontastic", "uitrontastic", "bower_components/jquery-ui/themes/images/theme_30_trontastic.png", "",
+		      "bower_components/jquery-ui/themes/images/theme_90_trontastic.png");
+		getCssReferences().add(new CSSReference("trontasticTheme", 1.121, "bower_components/jquery-ui/themes/trontastic/theme.min.css",
+		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/trontastic/theme.min.css").setSpecifiedClassName("jquitheme"));
+		getCssReferences().add(new CSSReference("trontasticTheme2", 1.121, "bower_components/jquery-ui/themes/trontastic/jquery-ui.min.css",
+		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/trontastic/jquery-ui.min.css").setSpecifiedClassName("jquitheme"));
 	}
 
 }

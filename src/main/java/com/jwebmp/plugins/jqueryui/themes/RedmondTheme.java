@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package com.jwebmp.plugins.jqueryui.nestablethemes;
+package com.jwebmp.plugins.jqueryui.themes;
 
 import com.jwebmp.core.base.references.CSSReference;
 import com.jwebmp.core.htmlbuilder.css.themes.Theme;
@@ -25,21 +25,21 @@ import com.jwebmp.core.htmlbuilder.css.themes.Theme;
  * @author MMagon
  * @since 2012/02/04
  */
-public class FlickTheme
+public class RedmondTheme
 		extends Theme
 {
 
 
 	/**
-	 * Constructs a new global flick theme
+	 * A global redmond theme
 	 */
-	public FlickTheme()
+	public RedmondTheme()
 	{
-		super("Flick", "uiflick", "bower_components/jquery-ui/themes/images/theme_30_flick.png", "", "bower_components/jquery-ui/themes/images/theme_90_flick.png");
-		getCssReferences().add(new CSSReference("flickTheme", 1.121, "bower_components/jquery-ui/themes/flick/theme.min.css",
-		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/flick/theme.min.css").setSpecifiedClassName("jquitheme"));
-		getCssReferences().add(new CSSReference("flickTheme2", 1.121, "bower_components/jquery-ui/themes/flick/jquery-ui.min.css",
-		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/flick/jquery-ui.min.css").setSpecifiedClassName("jquitheme"));
+		super("Redmond", "uiredmond", "bower_components/jquery-ui/themes/images/theme_30_redmond.png", "", "bower_components/jquery-ui/themes/images/theme_90_redmond.png");
+		getCssReferences().add(new CSSReference("redmondTheme", 1.121, "bower_components/jquery-ui/themes/redmond/theme.min.css",
+		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/redmond/theme.min.css").setSpecifiedClassName("jquitheme"));
+		getCssReferences().add(new CSSReference("redmondTheme2", 1.121, "bower_components/jquery-ui/themes/redmond/jquery-ui.min.css",
+		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/redmond/jquery-ui.min.css").setSpecifiedClassName("jquitheme"));
 
 	}
 

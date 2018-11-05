@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package com.jwebmp.plugins.jqueryui.nestablethemes;
+package com.jwebmp.plugins.jqueryui.themes;
 
 import com.jwebmp.core.Page;
 import com.jwebmp.core.plugins.PluginInformation;
@@ -49,7 +49,7 @@ public class JQUIThemesPageConfigurator
 	 * If this configurator is enabled
 	 */
 	private static boolean enabled = true;
-	private static com.jwebmp.plugins.jqueryui.nestablethemes.JQUIThemes theme = com.jwebmp.plugins.jqueryui.nestablethemes.JQUIThemes.Base;
+	private static com.jwebmp.plugins.jqueryui.themes.JQUIThemes theme = com.jwebmp.plugins.jqueryui.themes.JQUIThemes.Base;
 
 	public JQUIThemesPageConfigurator()
 	{
@@ -87,7 +87,7 @@ public class JQUIThemesPageConfigurator
 	 * @return
 	 */
 	@NotNull
-	public static com.jwebmp.plugins.jqueryui.nestablethemes.JQUIThemes getTheme()
+	public static com.jwebmp.plugins.jqueryui.themes.JQUIThemes getTheme()
 	{
 		return JQUIThemesPageConfigurator.theme;
 	}
@@ -97,7 +97,7 @@ public class JQUIThemesPageConfigurator
 	 *
 	 * @param theme
 	 */
-	public static void setTheme(@NotNull com.jwebmp.plugins.jqueryui.nestablethemes.JQUIThemes theme)
+	public static void setTheme(@NotNull com.jwebmp.plugins.jqueryui.themes.JQUIThemes theme)
 	{
 		JQUIThemesPageConfigurator.theme = theme;
 	}

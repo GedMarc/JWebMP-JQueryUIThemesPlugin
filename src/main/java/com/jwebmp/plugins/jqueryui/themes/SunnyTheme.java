@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package com.jwebmp.plugins.jqueryui.nestablethemes;
+package com.jwebmp.plugins.jqueryui.themes;
 
 import com.jwebmp.core.base.references.CSSReference;
 import com.jwebmp.core.htmlbuilder.css.themes.Theme;
@@ -26,20 +26,20 @@ import com.jwebmp.core.htmlbuilder.css.themes.Theme;
  * @version 1.0
  * @since 2014/07/05
  */
-public class StartTheme
+public class SunnyTheme
 		extends Theme
 {
 
 
 	/**
-	 * A new start theme
+	 * A sunny theme
 	 */
-	public StartTheme()
+	public SunnyTheme()
 	{
-		super("Start", "uistart", "bower_components/jquery-ui/themes/images/theme_30_start_menu.png", "", "bower_components/jquery-ui/themes/images/theme_90_start_menu.png");
-		getCssReferences().add(new CSSReference("startTheme", 1.121, "bower_components/jquery-ui/themes/start/theme.min.css",
-		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/start/theme.min.css").setSpecifiedClassName("jquitheme"));
-		getCssReferences().add(new CSSReference("startTheme2", 1.121, "bower_components/jquery-ui/themes/start/jquery-ui.min.css",
-		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/start/jquery-ui.min.css").setSpecifiedClassName("jquitheme"));
+		super("Sunny", "uisunny", "bower_components/jquery-ui/themes/images/theme_30_sunny.png", "", "bower_components/jquery-ui/themes/images/theme_30_sunny.png");
+		getCssReferences().add(new CSSReference("sunnyTheme", 1.121, "bower_components/jquery-ui/themes/sunny/theme.min.css",
+		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/sunny/theme.min.css").setSpecifiedClassName("jquitheme"));
+		getCssReferences().add(new CSSReference("sunnyTheme2", 1.121, "bower_components/jquery-ui/themes/sunny/jquery-ui.min.css",
+		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/sunny/jquery-ui.min.css").setSpecifiedClassName("jquitheme"));
 	}
 }
