@@ -1,8 +1,3 @@
-import com.jwebmp.core.services.IPageConfigurator;
-import com.jwebmp.guicedinjection.interfaces.IGuiceScanJarExclusions;
-import com.jwebmp.guicedinjection.interfaces.IGuiceScanModuleExclusions;
-import com.jwebmp.plugins.jqueryui.themes.JQUIThemesPageConfigurator;
-
 module com.jwebmp.plugins.jqueryui.themes {
 
 	exports com.jwebmp.plugins.jqueryui.themes;
@@ -15,10 +10,10 @@ module com.jwebmp.plugins.jqueryui.themes {
 	requires java.logging;
 	requires com.jwebmp.guicedinjection;
 
-	provides IPageConfigurator with JQUIThemesPageConfigurator;
+	provides com.jwebmp.core.services.IPageConfigurator with com.jwebmp.plugins.jqueryui.themes.JQUIThemesPageConfigurator;
 
-	provides IGuiceScanModuleExclusions with com.jwebmp.plugins.jqueryui.themes.implementations.JQueryUIThemesExclusionsModule;
-	provides IGuiceScanJarExclusions with com.jwebmp.plugins.jqueryui.themes.implementations.JQueryUIThemesExclusionsModule;
+	provides com.jwebmp.guicedinjection.interfaces.IGuiceScanModuleExclusions with com.jwebmp.plugins.jqueryui.themes.implementations.JQueryUIThemesExclusionsModule;
+	provides com.jwebmp.guicedinjection.interfaces.IGuiceScanJarExclusions with com.jwebmp.plugins.jqueryui.themes.implementations.JQueryUIThemesExclusionsModule;
 
 	opens com.jwebmp.plugins.jqueryui.themes to com.fasterxml.jackson.databind, com.jwebmp.core;
 }
