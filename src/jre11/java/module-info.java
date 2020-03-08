@@ -13,7 +13,6 @@ module com.jwebmp.plugins.jqueryui.themes {
 	provides com.jwebmp.core.services.IPageConfigurator with com.jwebmp.plugins.jqui.themes.JQUIThemesPageConfigurator;
 
 	provides com.guicedee.guicedinjection.interfaces.IGuiceScanModuleExclusions with com.jwebmp.plugins.jqui.themes.implementations.JQueryUIThemesExclusionsModule;
-	provides com.guicedee.guicedinjection.interfaces.IGuiceScanJarExclusions with com.jwebmp.plugins.jqui.themes.implementations.JQueryUIThemesExclusionsModule;
 
 	opens com.jwebmp.plugins.jqui.themes to com.fasterxml.jackson.databind, com.jwebmp.core;
 }
