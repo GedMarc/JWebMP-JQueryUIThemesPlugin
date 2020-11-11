@@ -2,7 +2,7 @@ package com.jwebmp.plugins.jqui.themes.implementations;
 
 import com.guicedee.guicedinjection.interfaces.IGuiceScanModuleExclusions;
 
-import javax.validation.constraints.NotNull;
+import jakarta.validation.constraints.NotNull;
 import java.util.HashSet;
 import java.util.Set;
 
