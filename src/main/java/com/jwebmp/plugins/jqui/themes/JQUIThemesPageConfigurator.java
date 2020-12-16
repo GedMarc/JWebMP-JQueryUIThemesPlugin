@@ -18,6 +18,7 @@ package com.jwebmp.plugins.jqui.themes;
 
 import com.jwebmp.core.Page;
 import com.jwebmp.core.plugins.PluginInformation;
+import com.jwebmp.core.plugins.PluginStatus;
 import com.jwebmp.core.services.IPageConfigurator;
 
 import jakarta.validation.constraints.NotNull;
@@ -32,19 +33,23 @@ import jakarta.validation.constraints.NotNull;
 		pluginVersion = "1.12.1",
 		pluginDependancyUniqueIDs = "jquery-ui",
 		pluginCategories = "jquery, ui, jquery-ui",
-		pluginSubtitle = "JQuery UI " + "" + "" + "Default Themes",
-		pluginGitUrl = "https://github" + "" + "" + "" + "" + "" + "" + ".com/GedMarc/JWebSwing-JQueryUIThemesPlugin",
+		pluginSubtitle = "JQuery UI Default Themes",
+		pluginGitUrl = "https://github.com/GedMarc/JWebSwing-JQueryUIThemesPlugin",
 		pluginSourceUrl = "http://jqueryui.com/",
-		pluginWikiUrl = "https://github" + "" + "" + "" + "" + "" + "" + ".com/GedMarc/JWebSwing-JQueryUIThemesPlugin/wiki",
+		pluginWikiUrl = "https://github.com/GedMarc/JWebSwing-JQueryUIThemesPlugin/wiki",
 		pluginOriginalHomepage = "http://jqueryui.com/themeroller/",
-		pluginDownloadUrl = "https://sourceforge" + "" + "" + "" + ".net/projects/jwebswing/files/plugins/JQueryUIThemesPlugin.jar/download",
-		pluginIconUrl = "bower_components/jquery-ui/themes/themeroller_icon.jpg",
-		pluginIconImageUrl = "bower_components/jquery-ui/themes/themeroller_example.jpg",
-		pluginLastUpdatedDate = "2017/03/04")
+		pluginDownloadUrl = "https://mvnrepository.com/artifact/com.jwebmp.plugins.jquery/jwebmp-jqui-themes",
+		pluginIconUrl = "",
+		pluginIconImageUrl = "",
+		pluginLastUpdatedDate = "2017/03/04",
+		pluginGroupId = "com.jwebmp.plugins.jquery",
+		pluginArtifactId = "jwebmp-jqui-themes",
+		pluginModuleName = "com.jwebmp.plugins.jqueryui.themes",
+		pluginStatus = PluginStatus.Released
+)
 public class JQUIThemesPageConfigurator
 		implements IPageConfigurator<JQUIThemesPageConfigurator>
 {
-
 	/**
 	 * If this configurator is enabled
 	 */
