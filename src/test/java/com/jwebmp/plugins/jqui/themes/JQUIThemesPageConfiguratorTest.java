@@ -26,7 +26,7 @@ class JQUIThemesPageConfiguratorTest
 	@Test
 	public void testReferences()
 	{
-		Page p = new Page();
+		Page<?> p = new Page();
 		new BaseTheme().getCssReferences()
 		               .forEach(p::addCssReference);
 		System.out.println(p.toString(0));
