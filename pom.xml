@@ -10,7 +10,7 @@
     <groupId>com.jwebmp.plugins.jquery</groupId>
     <artifactId>jwebmp-jqui-themes</artifactId>
     <packaging>jar</packaging>
-
+    <version>0.0.0_0-SNAPSHOT</version>
     <name>JQuery UI Themes Plugin</name>
     <description>The JWebSwing implementation for JQuery UI Themes</description>
     <url>https://github.com/GedMarc/JWebSwing-JQueryUIThemesPlugin</url>
